@@ -4,6 +4,8 @@ import './App.css'
 import SimpleSlider from './components/Slider/homeSlider';
 import CardList from './components/CardsHomepage/CardList';
 import ServiceList from './components/ServiceList/serviceList';
+import Footer from './components/Footer/footer';
+
 
 
 function App() {
@@ -17,6 +19,9 @@ function App() {
       <CardList />
       <ServiceList/>
       </body>
+      <footer>
+        <Footer/>
+      </footer>
     </div>
   );
 }

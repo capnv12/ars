@@ -25,15 +25,18 @@ height: 24px;
 `
 
 
-const Menu2 = styled.div`
+const MainMenu = styled.div`
     max-width: 960px;
     background: #fff;
     margin:0 auto;
     display: flex;
     padding: 10px;
+    text-decoration:none;
 `
-const MenuElements2 = styled.p`
+const MainMenuElements = styled.a`
     padding: 16px;
+    text-decoration:none;
+    cursor:pointer
 `
 const Logo = styled.img`
     max-width:200px;
@@ -49,15 +52,15 @@ const Navigation = () =>{
             <MenuElements>Inregistrare</MenuElements>
             <MenuElements>Logare</MenuElements>
             </Menu>
-            <Menu2>
-                <Logo src={logo} alt="DJI ARS Oradea Logo"/>
-                <MenuElements2>Consumator</MenuElements2>
-                <MenuElements2>Profesional</MenuElements2>
-                <MenuElements2>Enterprise</MenuElements2>
-                <MenuElements2>Piese</MenuElements2>
-                <MenuElements2>Explorati</MenuElements2>
-                <MenuElements2>Contact</MenuElements2>
-            </Menu2>
+            <MainMenu>
+                <MainMenuElements><Logo src={logo} alt="DJI ARS Oradea Logo"/></MainMenuElements>
+                <MainMenuElements>Consumator</MainMenuElements>
+                <MainMenuElements>Profesional</MainMenuElements>
+                <MainMenuElements>Enterprise</MainMenuElements>
+                <MainMenuElements>Piese</MainMenuElements>
+                <MainMenuElements>Explorati</MainMenuElements>
+                <MainMenuElements>Contact</MainMenuElements>
+            </MainMenu>
         </Nav>
     );
 }
