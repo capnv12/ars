@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import logo from '../../images/logo/logo.png';
+import { IoMdPerson } from "react-icons/io";
 
 const Nav = styled.nav`
     width:100%;
@@ -16,25 +17,33 @@ const Menu = styled.div`
     height:26px;
     padding:5px;`
 
-const MenuElements = styled.p`
-margin-right:15px;
-float: right;
-padding: 0 10px;
-border-left: 1px solid #ddd;
-height: 24px;
+const MenuElements = styled.a`
+    margin-right:15px;
+    float: right;
+    padding: 0 10px;
+    border-left: 1px solid #ddd;
+    height: 24px;
+    text-decoration:none;
+    cursor:pointer;
+    font-size: 24px;
+    color:#000;
+
 `
 
-
-const MainMenu = styled.div`
+const MainMenu = styled.ul`
     max-width: 960px;
     background: #fff;
     margin:0 auto;
     display: flex;
     padding: 10px;
     text-decoration:none;
+    list-style-type:none;
 `
-const MainMenuElements = styled.a`
+const MainMenuElements = styled.li`
     padding: 16px;
+`
+
+const MainMenuLinks = styled.a`
     text-decoration:none;
     cursor:pointer
 `
@@ -49,17 +58,16 @@ const Navigation = () =>{
     return(
         <Nav>
             <Menu>
-            <MenuElements>Inregistrare</MenuElements>
-            <MenuElements>Logare</MenuElements>
+                <MenuElements href="/logare"><IoMdPerson style={{margin:"0px 5px 0 5px"}}/></MenuElements>
             </Menu>
             <MainMenu>
-                <MainMenuElements><Logo src={logo} alt="DJI ARS Oradea Logo"/></MainMenuElements>
-                <MainMenuElements>Consumator</MainMenuElements>
-                <MainMenuElements>Profesional</MainMenuElements>
-                <MainMenuElements>Enterprise</MainMenuElements>
-                <MainMenuElements>Piese</MainMenuElements>
-                <MainMenuElements>Explorati</MainMenuElements>
-                <MainMenuElements>Contact</MainMenuElements>
+                <MainMenuElements><MainMenuLinks><Logo src={logo} alt="DJI ARS Oradea Logo"/></MainMenuLinks></MainMenuElements>
+                <MainMenuElements><MainMenuLinks>Consumator</MainMenuLinks></MainMenuElements>
+                <MainMenuElements><MainMenuLinks>Profesional</MainMenuLinks></MainMenuElements>
+                <MainMenuElements><MainMenuLinks>Enterprise</MainMenuLinks></MainMenuElements>
+                <MainMenuElements><MainMenuLinks>Piese</MainMenuLinks></MainMenuElements>
+                <MainMenuElements><MainMenuLinks>Explorati</MainMenuLinks></MainMenuElements>
+                <MainMenuElements><MainMenuLinks>Contact</MainMenuLinks></MainMenuElements>
             </MainMenu>
         </Nav>
     );

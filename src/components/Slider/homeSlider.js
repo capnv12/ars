@@ -36,7 +36,6 @@ const BannerTitle = styled.img`
   width:351;
   margin:0 auto;
   padding-top:75px;
-
 `
 
 

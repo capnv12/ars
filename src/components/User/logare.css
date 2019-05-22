@@ -1,0 +1,8 @@
+.submitBtn{
+    color: #fff;
+    background: #44a8f2;
+    border: 1px solid #44a8f2;
+}
+.submitBtn:hover{
+    box-shadow: 0 0 6px rgba(0,0,0,.2);
+}
