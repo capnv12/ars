@@ -23,7 +23,7 @@ const Banner1 = styled.div`
 
 `
 const Banner2 = styled.div`
-  background-image:background-image: linear-gradient(top,#282c35,#090b18);background-image: -webkit-linear-gradient(top,#282c35,#090b18);background-image: -o-linear-gradient(top,#282c35,#090b18);background-image: -ms-linear-gradient(top,#282c35,#090b18);background-image: -moz-linear-gradient(top,#282c35,#090b18);
+  background-image: linear-gradient(top,#282c35,#090b18);background-image: -webkit-linear-gradient(top,#282c35,#090b18);background-image: -o-linear-gradient(top,#282c35,#090b18);background-image: -ms-linear-gradient(top,#282c35,#090b18);background-image: -moz-linear-gradient(top,#282c35,#090b18);
   max-height:750px;
   width:100%;
   `
