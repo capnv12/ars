@@ -29,9 +29,10 @@ const H2 = styled.h2`
 `
 const P = styled.p`
     color: #303233;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 24px;
+    line-height: 32px;
     margin:5px;
+    font-weight:500;
 `
 const CumparaButton = styled.a`
     background: #3c3e40;

@@ -72,6 +72,7 @@ class SmallBanner extends React.Component{
                     <H2>{this.props.title}</H2>
                     <P className="body-content">{this.props.text}</P>
                 </Text>
+                <LearnButton/>
             </SectionContent>
           </Wrapper>
         )

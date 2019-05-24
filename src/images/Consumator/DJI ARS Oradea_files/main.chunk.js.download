@@ -1,0 +1,4222 @@
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["main"],{
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/App.css":
+/*!************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./src/App.css ***!
+  \************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
+// Module
+exports.push([module.i, "html, body, {\r\n    margin: 0;\r\n    padding: 0;\r\n    border: 0;\r\n    outline: 0;\r\n    font-size: 100%;\r\n    vertical-align: baseline;\r\n    background: #FEFEFE;\r\n  }", ""]);
+
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/User/logare.css":
+/*!*******************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./src/components/User/logare.css ***!
+  \*******************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
+// Module
+exports.push([module.i, ".submitBtn{\r\n    color: #fff;\r\n    background: #44a8f2;\r\n    border: 1px solid #44a8f2;\r\n}\r\n.submitBtn:hover{\r\n    box-shadow: 0 0 6px rgba(0,0,0,.2);\r\n}", ""]);
+
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/index.css":
+/*!**************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./src/index.css ***!
+  \**************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
+// Module
+exports.push([module.i, "body {\n  margin: 0 !important;\n    padding: 0 !important;\n  font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Roboto\", \"Oxygen\",\n    \"Ubuntu\", \"Cantarell\", \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\",\n    sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n\ncode {\n  font-family: source-code-pro, Menlo, Monaco, Consolas, \"Courier New\",\n    monospace;\n}\nhtml, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  outline: 0;\n  font-size: 100%;\n  vertical-align: baseline;\n  background: transparent;\n}", ""]);
+
+
+
+/***/ }),
+
+/***/ "./src/App.css":
+/*!*********************!*\
+  !*** ./src/App.css ***!
+  \*********************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../node_modules/postcss-loader/src??postcss!./App.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/App.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(true) {
+	module.hot.accept(/*! !../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../node_modules/postcss-loader/src??postcss!./App.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/App.css", function() {
+		var newContent = __webpack_require__(/*! !../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../node_modules/postcss-loader/src??postcss!./App.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/App.css");
+
+		if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
+
+		var locals = (function(a, b) {
+			var key, idx = 0;
+
+			for(key in a) {
+				if(!b || a[key] !== b[key]) return false;
+				idx++;
+			}
+
+			for(key in b) idx--;
+
+			return idx === 0;
+		}(content.locals, newContent.locals));
+
+		if(!locals) throw new Error('Aborting CSS HMR due to changed css-modules locals.');
+
+		update(newContent);
+	});
+
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ "./src/App.js":
+/*!********************!*\
+  !*** ./src/App.js ***!
+  \********************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _src_components_Navigation_navigation__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../src/components/Navigation/navigation */ "./src/components/Navigation/navigation.js");
+/* harmony import */ var _App_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./App.css */ "./src/App.css");
+/* harmony import */ var _App_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_App_css__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _components_Slider_homeSlider__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/Slider/homeSlider */ "./src/components/Slider/homeSlider.js");
+/* harmony import */ var _components_CardsHomepage_CardList__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/CardsHomepage/CardList */ "./src/components/CardsHomepage/CardList.js");
+/* harmony import */ var _components_ServiceList_serviceList__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/ServiceList/serviceList */ "./src/components/ServiceList/serviceList.js");
+/* harmony import */ var _components_Footer_footer__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/Footer/footer */ "./src/components/Footer/footer.js");
+/* harmony import */ var _components_User_logare__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/User/logare */ "./src/components/User/logare.js");
+/* harmony import */ var _components_User_inregistrare__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/User/inregistrare */ "./src/components/User/inregistrare.js");
+/* harmony import */ var _components_Consumator_consumator__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/Consumator/consumator */ "./src/components/Consumator/consumator.js");
+var _jsxFileName = "C:\\Users\\dront\\OneDrive\\Desktop\\djiars\\djiars\\src\\App.js";
+
+
+
+
+
+
+
+
+
+
+
+class App extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
+  constructor() {
+    super();
+
+    this.onRouteChange = route => {
+      this.setState({
+        route: route
+      });
+    };
+
+    this.state = {
+      route: 'home'
+    };
+  }
+
+  render() {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "App",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 27
+      },
+      __self: this
+    }, this.state.route === 'home' ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 29
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Consumator_consumator__WEBPACK_IMPORTED_MODULE_9__["default"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 30
+      },
+      __self: this
+    }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_src_components_Navigation_navigation__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 31
+      },
+      __self: this
+    }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Slider_homeSlider__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 32
+      },
+      __self: this
+    }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_CardsHomepage_CardList__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 33
+      },
+      __self: this
+    }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_ServiceList_serviceList__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 34
+      },
+      __self: this
+    })) : this.state.route === 'logare' ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_User_logare__WEBPACK_IMPORTED_MODULE_7__["default"], {
+      onRouteChange: this.onRouteChange,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 38
+      },
+      __self: this
+    }) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_User_inregistrare__WEBPACK_IMPORTED_MODULE_8__["default"], {
+      onRouteChange: this.onRouteChange,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 39
+      },
+      __self: this
+    }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Footer_footer__WEBPACK_IMPORTED_MODULE_6__["default"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 42
+      },
+      __self: this
+    }));
+  }
+
+} // function App() {
+// }
+
+
+/* harmony default export */ __webpack_exports__["default"] = (App);
+
+/***/ }),
+
+/***/ "./src/components/CardsHomepage/CardList.js":
+/*!**************************************************!*\
+  !*** ./src/components/CardsHomepage/CardList.js ***!
+  \**************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime/helpers/esm/taggedTemplateLiteral.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _Cards__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Cards */ "./src/components/CardsHomepage/Cards.js");
+/* harmony import */ var _card__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./card */ "./src/components/CardsHomepage/card.js");
+/* harmony import */ var _images_cardsHome_smart_controller_jpg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../images/cardsHome/smart_controller.jpg */ "./src/images/cardsHome/smart_controller.jpg");
+/* harmony import */ var _images_cardsHome_smart_controller_jpg__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_images_cardsHome_smart_controller_jpg__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _images_cardsHome_ronin_s_jpg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../images/cardsHome/ronin_s.jpg */ "./src/images/cardsHome/ronin_s.jpg");
+/* harmony import */ var _images_cardsHome_ronin_s_jpg__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_images_cardsHome_ronin_s_jpg__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _images_cardsHome_osmo_pocket_jpg__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../images/cardsHome/osmo_pocket.jpg */ "./src/images/cardsHome/osmo_pocket.jpg");
+/* harmony import */ var _images_cardsHome_osmo_pocket_jpg__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_images_cardsHome_osmo_pocket_jpg__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _images_cardsHome_mavic_2_enterprise_jpg__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../images/cardsHome/mavic_2_enterprise.jpg */ "./src/images/cardsHome/mavic_2_enterprise.jpg");
+/* harmony import */ var _images_cardsHome_mavic_2_enterprise_jpg__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_images_cardsHome_mavic_2_enterprise_jpg__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _images_cardsHome_prof_jpg__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../images/cardsHome/prof.jpg */ "./src/images/cardsHome/prof.jpg");
+/* harmony import */ var _images_cardsHome_prof_jpg__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_images_cardsHome_prof_jpg__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _images_cardsHome_entrp_jpg__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../images/cardsHome/entrp.jpg */ "./src/images/cardsHome/entrp.jpg");
+/* harmony import */ var _images_cardsHome_entrp_jpg__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_images_cardsHome_entrp_jpg__WEBPACK_IMPORTED_MODULE_10__);
+
+var _jsxFileName = "C:\\Users\\dront\\OneDrive\\Desktop\\djiars\\djiars\\src\\components\\CardsHomepage\\CardList.js";
+
+function _templateObject9() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\nposition: absolute;\nleft: 40px;\ntop: 65%;\nz-index: 1000;\npadding: 5px;\ncolor: #000;\n\n"]);
+
+  _templateObject9 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject8() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\nposition: absolute;\nleft: 40px;\ntop: 40%;\nz-index: 1000;\npadding: 5px;\ncolor: #000;\n"]);
+
+  _templateObject8 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject7() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\nposition: absolute;\nleft: 40px;\ntop: 40%;\nz-index: 1000;\npadding: 5px;\ncolor: #000;\n"]);
+
+  _templateObject7 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject6() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\nposition: absolute;\nleft: 320px;\ntop: 160px;\nz-index: 1000;\npadding: 5px;\ncolor: #FFFFFF;\n"]);
+
+  _templateObject6 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject5() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    flex-basis: 48%;\n    max-width: 48%;\n    position: relative;\n    padding:5px;\n    margin-top: 20px;\n"]);
+
+  _templateObject5 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject4() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    flex-basis: 48%;\n    max-width: 48%;\n    position: relative;\n    padding:5px;\n"]);
+
+  _templateObject4 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject3() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    width: 100%;\n    background-position: center center;\n    background-size: auto 320px;\n    transition: all .7s;\n    z-index: 300\n    positon:absolute;\n    &:hover {\n        transform: scale(1.03);\n    }\n"]);
+
+  _templateObject3 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject2() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    max-width: 1200px;\n    margin:0 auto;\n    display: flex;\n    flex-wrap: wrap;\n"]);
+
+  _templateObject2 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    width:100%;\n    background:#f7f8f9;\n"]);
+
+  _templateObject = function () {
+    return data;
+  };
+
+  return data;
+}
+
+
+
+
+
+
+
+
+
+
+
+const Container = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject());
+const Wrapper = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject2());
+const Img = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].img(_templateObject3());
+const Box = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject4());
+const Box2 = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject5());
+const Content1 = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject6());
+const Content2 = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject7());
+const Content3 = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject8());
+const Content4 = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject9());
+
+const CardList = () => {
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Container, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 84
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Wrapper, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 85
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Box, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 86
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Img, {
+    src: _images_cardsHome_smart_controller_jpg__WEBPACK_IMPORTED_MODULE_5___default.a,
+    alt: "test",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 87
+    },
+    __self: undefined
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Content1, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 88
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Cards__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    id: _card__WEBPACK_IMPORTED_MODULE_4__["card"][0].id,
+    shortDescription: _card__WEBPACK_IMPORTED_MODULE_4__["card"][0].shortDescription,
+    src: _card__WEBPACK_IMPORTED_MODULE_4__["card"][0].src,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 89
+    },
+    __self: undefined
+  }))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Box, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 92
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Img, {
+    src: _images_cardsHome_ronin_s_jpg__WEBPACK_IMPORTED_MODULE_6___default.a,
+    alt: "test",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 93
+    },
+    __self: undefined
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Content2, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 94
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Cards__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    id: _card__WEBPACK_IMPORTED_MODULE_4__["card"][1].id,
+    name: _card__WEBPACK_IMPORTED_MODULE_4__["card"][1].name,
+    shortDescription: _card__WEBPACK_IMPORTED_MODULE_4__["card"][1].shortDescription,
+    src: _card__WEBPACK_IMPORTED_MODULE_4__["card"][1].src,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 95
+    },
+    __self: undefined
+  }))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Box, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 98
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Img, {
+    src: _images_cardsHome_osmo_pocket_jpg__WEBPACK_IMPORTED_MODULE_7___default.a,
+    alt: "test",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 99
+    },
+    __self: undefined
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Content3, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 100
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Cards__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    id: _card__WEBPACK_IMPORTED_MODULE_4__["card"][2].id,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 101
+    },
+    __self: undefined
+  }))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Box, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 104
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Img, {
+    src: _images_cardsHome_mavic_2_enterprise_jpg__WEBPACK_IMPORTED_MODULE_8___default.a,
+    alt: "test",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 105
+    },
+    __self: undefined
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Content4, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 106
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Cards__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    id: _card__WEBPACK_IMPORTED_MODULE_4__["card"][3].id,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 107
+    },
+    __self: undefined
+  }))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Box2, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 110
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Img, {
+    src: _images_cardsHome_prof_jpg__WEBPACK_IMPORTED_MODULE_9___default.a,
+    alt: "test",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 111
+    },
+    __self: undefined
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Content4, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 112
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Cards__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    id: _card__WEBPACK_IMPORTED_MODULE_4__["card"][4].id,
+    name: _card__WEBPACK_IMPORTED_MODULE_4__["card"][4].name,
+    shortDescription: _card__WEBPACK_IMPORTED_MODULE_4__["card"][4].shortDescription,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 113
+    },
+    __self: undefined
+  }))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Box2, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 116
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Img, {
+    src: _images_cardsHome_entrp_jpg__WEBPACK_IMPORTED_MODULE_10___default.a,
+    alt: "test",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 117
+    },
+    __self: undefined
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Content4, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 118
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Cards__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    id: _card__WEBPACK_IMPORTED_MODULE_4__["card"][4].id,
+    name: _card__WEBPACK_IMPORTED_MODULE_4__["card"][4].name,
+    shortDescription: _card__WEBPACK_IMPORTED_MODULE_4__["card"][4].shortDescription,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 119
+    },
+    __self: undefined
+  })))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (CardList);
+
+/***/ }),
+
+/***/ "./src/components/CardsHomepage/Cards.js":
+/*!***********************************************!*\
+  !*** ./src/components/CardsHomepage/Cards.js ***!
+  \***********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime/helpers/esm/taggedTemplateLiteral.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+
+var _jsxFileName = "C:\\Users\\dront\\OneDrive\\Desktop\\djiars\\djiars\\src\\components\\CardsHomepage\\Cards.js";
+
+function _templateObject3() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    font-size: 16x;\n    font-weight: 300;\n    line-height: 24px\n"]);
+
+  _templateObject3 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject2() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    font-size: 1.5em;\n"]);
+
+  _templateObject2 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    max-width: 1200px;\n    margin:0 auto;\n"]);
+
+  _templateObject = function () {
+    return data;
+  };
+
+  return data;
+}
+
+
+
+const Wrapper = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject());
+const Title = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].h1(_templateObject2());
+const Pragraph = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].p(_templateObject3());
+
+const Cards = props => {
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Wrapper, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Title, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20
+    },
+    __self: undefined
+  }, props.name), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Pragraph, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21
+    },
+    __self: undefined
+  }, props.shortDescription));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Cards);
+
+/***/ }),
+
+/***/ "./src/components/CardsHomepage/card.js":
+/*!**********************************************!*\
+  !*** ./src/components/CardsHomepage/card.js ***!
+  \**********************************************/
+/*! exports provided: card */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "card", function() { return card; });
+const card = [{
+  id: 1,
+  name: 'Smart Controller',
+  shortDescription: 'Maximize your outdoor flying experience',
+  src: 'www2.djicdn.com/cms_uploads/grid_root/background_image/421/24b542aa42313ef6047c6b7170779144.jpg'
+}, {
+  id: 2,
+  name: 'Ronin',
+  shortDescription: 'Dare to Move',
+  src: 'www2.djicdn.com/cms_uploads/grid_root/background_image/421/24b542aa42313ef6047c6b7170779144.jpg'
+}, {
+  id: 3,
+  name: 'Osmo Pocket',
+  shortDescription: 'Because Life is Big',
+  src: 'www2.djicdn.com/cms_uploads/grid_root/background_image/421/24b542aa42313ef6047c6b7170779144.jpg'
+}, {
+  id: 4,
+  name: 'Mavic 2 Enterprise',
+  shortDescription: 'Build to Empower. Destinated to Serve.',
+  src: 'www2.djicdn.com/cms_uploads/grid_root/background_image/421/24b542aa42313ef6047c6b7170779144.jpg'
+}, {
+  id: 5,
+  name: 'Profesional >',
+  shortDescription: 'Echipamente de filmat pentru profesionisti',
+  src: 'www2.djicdn.com/cms_uploads/grid_root/background_image/421/24b542aa42313ef6047c6b7170779144.jpg'
+}, {
+  id: 6,
+  name: 'Enterprise >',
+  shortDescription: 'Solutii noi pentru scopuri moderne',
+  src: 'www2.djicdn.com/cms_uploads/grid_root/background_image/421/24b542aa42313ef6047c6b7170779144.jpg'
+}];
+
+/***/ }),
+
+/***/ "./src/components/Consumator/bigCard.js":
+/*!**********************************************!*\
+  !*** ./src/components/Consumator/bigCard.js ***!
+  \**********************************************/
+/*! exports provided: CardHeader, CardBody */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CardHeader", function() { return CardHeader; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CardBody", function() { return CardBody; });
+/* harmony import */ var C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime/helpers/esm/taggedTemplateLiteral.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+
+var _jsxFileName = "C:\\Users\\dront\\OneDrive\\Desktop\\djiars\\djiars\\src\\components\\Consumator\\bigCard.js";
+
+function _templateObject7() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    display: inline-block;\n    font-size: 16px;\n    font-weight: 600;\n    line-height: 46px;\n    height: 46px;\n    color: #303233;\n    cursor: pointer;\n"]);
+
+  _templateObject7 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject6() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    background: #3c3e40;\n    background-image: linear-gradient(-180deg,#3c3e40 0%,#303233 100%);\n    display: inline-block;\n    color: #fff;\n    font-size: 16px;\n    line-height: 16px;\n    padding: 15px 32px;\n    border: none;\n    border-radius: 2px;\n    outline: none;\n    cursor: pointer;\n    transition: all .3s ease;\n    margin:100px 100px 0 0 ;\n    &:hover{\n        background-image: linear-gradient(-180deg,#545759 0%,#303233 100%);\n    }\n"]);
+
+  _templateObject6 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject5() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    color: #303233;\n    font-size: 16px;\n    line-height: 24px;\n    margin:5px;\n"]);
+
+  _templateObject5 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject4() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    font-size: 40px;\n"]);
+
+  _templateObject4 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject3() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    -webkit-box-flex: 1;\n    -moz-flex: 1;\n    flex: 1;\n    -webkit-box-pack: center;\n    -moz-justify-content: center;\n    justify-content: center\n"]);
+
+  _templateObject3 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject2() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    flex-basis: 50%;\n    max-width: 50%;\n    padding: 64px;\n"]);
+
+  _templateObject2 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    flex-basis: 50%;\n    max-width: 50%;\n    display: -webkit-box;\n    display: flex;\n    height: 480px;\n    background-size: 100%;\n    background-repeat: no-repeat;\n    background-position: center;\n"]);
+
+  _templateObject = function () {
+    return data;
+  };
+
+  return data;
+}
+
+
+
+const Wrapper = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].section(_templateObject());
+const SectionContent = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject2());
+const Text = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject3());
+const H2 = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].h2(_templateObject4());
+const P = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].p(_templateObject5());
+const CumparaButton = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].a(_templateObject6());
+const MaiMultButton = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].a(_templateObject7());
+
+class CardHeader extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
+  render() {
+    const image = this.props.image;
+    var style = {
+      backgroundImage: 'url(' + image + ')'
+    };
+    return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Wrapper, {
+      style: style,
+      id: image,
+      className: "card-header",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 71
+      },
+      __self: this
+    });
+  }
+
+}
+
+class BuyButton extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
+  render() {
+    return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(CumparaButton, {
+      className: "button button-primary",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 79
+      },
+      __self: this
+    }, "CUMPARA ACUM");
+  }
+
+}
+
+class LearnButton extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
+  render() {
+    return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(MaiMultButton, {
+      className: "button button-primary",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 87
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
+      className: "fa fa-chevron-right",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 88
+      },
+      __self: this
+    }), "Vezi mai mult >");
+  }
+
+}
+
+class CardBody extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
+  render() {
+    return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(SectionContent, {
+      className: "card-body",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 97
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Text, {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 98
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(H2, {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 99
+      },
+      __self: this
+    }, this.props.title), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(P, {
+      className: "body-content",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 100
+      },
+      __self: this
+    }, this.props.text)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(BuyButton, {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 102
+      },
+      __self: this
+    }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(LearnButton, {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 103
+      },
+      __self: this
+    }));
+  }
+
+}
+
+
+
+/***/ }),
+
+/***/ "./src/components/Consumator/consumator.js":
+/*!*************************************************!*\
+  !*** ./src/components/Consumator/consumator.js ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime/helpers/esm/taggedTemplateLiteral.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _images_Consumator_banner_consumator_jpg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../images/Consumator/banner_consumator.jpg */ "./src/images/Consumator/banner_consumator.jpg");
+/* harmony import */ var _images_Consumator_banner_consumator_jpg__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_images_Consumator_banner_consumator_jpg__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _images_Consumator_mavic_2_pro_jpg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../images/Consumator/mavic_2_pro.jpg */ "./src/images/Consumator/mavic_2_pro.jpg");
+/* harmony import */ var _images_Consumator_mavic_2_pro_jpg__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_images_Consumator_mavic_2_pro_jpg__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _images_Consumator_mavic_2_zoom_jpg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../images/Consumator/mavic_2_zoom.jpg */ "./src/images/Consumator/mavic_2_zoom.jpg");
+/* harmony import */ var _images_Consumator_mavic_2_zoom_jpg__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_images_Consumator_mavic_2_zoom_jpg__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _images_Consumator_mavic_air_jpg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../images/Consumator/mavic_air.jpg */ "./src/images/Consumator/mavic_air.jpg");
+/* harmony import */ var _images_Consumator_mavic_air_jpg__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_images_Consumator_mavic_air_jpg__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _images_Consumator_mavic_series_jpg__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../images/Consumator/mavic_series.jpg */ "./src/images/Consumator/mavic_series.jpg");
+/* harmony import */ var _images_Consumator_mavic_series_jpg__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_images_Consumator_mavic_series_jpg__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _images_Consumator_mavic_pro_platinum_jpg__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../images/Consumator/mavic_pro_platinum.jpg */ "./src/images/Consumator/mavic_pro_platinum.jpg");
+/* harmony import */ var _images_Consumator_mavic_pro_platinum_jpg__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_images_Consumator_mavic_pro_platinum_jpg__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _images_Consumator_mavic_pro_jpg__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../images/Consumator/mavic_pro.jpg */ "./src/images/Consumator/mavic_pro.jpg");
+/* harmony import */ var _images_Consumator_mavic_pro_jpg__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_images_Consumator_mavic_pro_jpg__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _bigCard__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./bigCard */ "./src/components/Consumator/bigCard.js");
+/* harmony import */ var _smallCard__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./smallCard */ "./src/components/Consumator/smallCard.js");
+/* harmony import */ var _smallBanners__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./smallBanners */ "./src/components/Consumator/smallBanners.js");
+
+var _jsxFileName = "C:\\Users\\dront\\OneDrive\\Desktop\\djiars\\djiars\\src\\components\\Consumator\\consumator.js";
+
+function _templateObject11() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n\n    flex-basis: 48%;\n    max-width: 48%;\n    position: relative;\n    margin:10px;\n    box-shadow: 2px 2px 10px -10px rgba(0,0,0,0.75);\n    border-radius:2px;\n"]);
+
+  _templateObject11 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject10() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    display: -webkit-box;\n    display: flex;\n    margin:10px;\n    height: 480px;\n    background-size: 100%;\n    background-repeat: no-repeat;\n    background-position: center;\n    box-shadow: 2px 2px 10px -10px rgba(0,0,0,0.75);\n    border-radius:2px;\n"]);
+
+  _templateObject10 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject9() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    font-size: 40px;\n    font-weight: 600;\n"]);
+
+  _templateObject9 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject8() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    flex-basis: 100%;\n    max-width: 100%;\n    color: #303233;\n    font-size: 40px;\n    font-weight: 600;\n    line-height: 40px;\n    text-align: center;\n    margin-bottom: 32px;\n"]);
+
+  _templateObject8 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject7() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    font-size: 16px;\n    line-height: 24px;\n"]);
+
+  _templateObject7 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject6() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    font-size: 40px;\n    margin-bottom: 16px;\n    line-height: 1;\n"]);
+
+  _templateObject6 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject5() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    text-align: left;\n    color: #303233;\n    height: 400px;\n    display: -webkit-box;\n    display: flex;\n    -webkit-box-direction: normal;\n    -webkit-box-orient: vertical;\n    -moz-flex-direction: column;\n    flex-direction: column;\n    -webkit-box-pack: center;\n    -moz-justify-content: center;\n    justify-content: center;\n    padding: 24px;\n"]);
+
+  _templateObject5 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject4() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    display: -webkit-box;\n    display: flex;\n    flex-wrap: wrap;\n    margin: 0 -10px;\n"]);
+
+  _templateObject4 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject3() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    width: 1200px;\n    margin: 0 auto;\n    padding-top: 40px;\n"]);
+
+  _templateObject3 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject2() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    height: 400px;\n    background-size: cover;\n    background-repeat: no-repeat;\n    background-position: center;\n    background-color: #494b4d;\n    background-image: url(", ");\n"]);
+
+  _templateObject2 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    width:100%;\n"]);
+
+  _templateObject = function () {
+    return data;
+  };
+
+  return data;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+const Wrapper = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject());
+const BannerWrap = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject2(), _images_Consumator_banner_consumator_jpg__WEBPACK_IMPORTED_MODULE_3___default.a);
+const Container = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject3());
+const ContainerGrid = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject4());
+const TitleContainer = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject5());
+const H1 = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].h1(_templateObject6());
+const P = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].p(_templateObject7());
+const SectionTitle = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject8());
+const H2 = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].h2(_templateObject9());
+const Section = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject10());
+const SmallSection = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject11());
+
+const Consumator = () => {
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Wrapper, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 99
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(BannerWrap, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 100
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Container, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 101
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(TitleContainer, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 102
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(H1, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 103
+    },
+    __self: undefined
+  }, "Consumator"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(P, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 104
+    },
+    __self: undefined
+  }, "Fotografiaza Lumea Ca Niciodata Pana Acum.")))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Container, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 108
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(ContainerGrid, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 109
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(SectionTitle, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 110
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(H2, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 111
+    },
+    __self: undefined
+  }, "Seria Mavic"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Section, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 114
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_bigCard__WEBPACK_IMPORTED_MODULE_10__["CardBody"], {
+    title: 'MAVIC 2 PRO',
+    text: 'Camera Hasselblad | 20 MP 1” CMOS Sensor | Diafragma ajustabila | Profil de culoare pe 10-bit Dlog-M  | 10-bit HDR Video | Hyperlapse | Transmisie Video 8 km 1080p | Timp de zbor 31min ',
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 115
+    },
+    __self: undefined
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_bigCard__WEBPACK_IMPORTED_MODULE_10__["CardHeader"], {
+    image: _images_Consumator_mavic_2_pro_jpg__WEBPACK_IMPORTED_MODULE_4___default.a,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 116
+    },
+    __self: undefined
+  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Section, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 118
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_bigCard__WEBPACK_IMPORTED_MODULE_10__["CardBody"], {
+    title: 'MAVIC 2 ZOOM',
+    text: 'Camera cu Zoom Optic 2× |  Zoom 4× FHD  | Imagini 48MP Super Resolution  | Dolly Zoom | Hyperlapse | Transmisie Video 8 km 1080p | Timp de zbor 31min ',
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 119
+    },
+    __self: undefined
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_bigCard__WEBPACK_IMPORTED_MODULE_10__["CardHeader"], {
+    image: _images_Consumator_mavic_2_zoom_jpg__WEBPACK_IMPORTED_MODULE_5___default.a,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 120
+    },
+    __self: undefined
+  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Section, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 122
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_bigCard__WEBPACK_IMPORTED_MODULE_10__["CardBody"], {
+    title: 'MAVIC AIR',
+    text: 'Panorame Sferice 32 MP | Portabil | Gimbal 3-Axe &  Camera 4K |  Senzori de obstacole tridirectionali | SmartCapture | Timp de zbor 21 de Minute  ',
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 123
+    },
+    __self: undefined
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_bigCard__WEBPACK_IMPORTED_MODULE_10__["CardHeader"], {
+    image: _images_Consumator_mavic_air_jpg__WEBPACK_IMPORTED_MODULE_6___default.a,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 124
+    },
+    __self: undefined
+  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(SmallSection, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 126
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_smallCard__WEBPACK_IMPORTED_MODULE_11__["SmallCardHeader"], {
+    image: _images_Consumator_mavic_pro_platinum_jpg__WEBPACK_IMPORTED_MODULE_8___default.a,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 127
+    },
+    __self: undefined
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_smallCard__WEBPACK_IMPORTED_MODULE_11__["SmallCardBody"], {
+    title: 'Mavic Pro Platinum',
+    text: 'Timp de zbor 30 de minute | Zgomot redus cu 4 dB  ',
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 128
+    },
+    __self: undefined
+  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    style: {
+      display: 'flex'
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 130
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(SmallSection, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 130
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_smallCard__WEBPACK_IMPORTED_MODULE_11__["SmallCardHeader"], {
+    image: _images_Consumator_mavic_pro_jpg__WEBPACK_IMPORTED_MODULE_9___default.a,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 131
+    },
+    __self: undefined
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_smallCard__WEBPACK_IMPORTED_MODULE_11__["SmallCardBody"], {
+    title: 'Mavic Pro',
+    text: 'Camera 4K | Imagini 12 MP | Viteza maxima 65 km/h  ',
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 132
+    },
+    __self: undefined
+  }))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_smallBanners__WEBPACK_IMPORTED_MODULE_12__["default"], {
+    title: 'MAVIC 2 PRO',
+    text: 'Puternic si portabil. Pregatit pentru o aventura aeriana. ',
+    image: _images_Consumator_mavic_series_jpg__WEBPACK_IMPORTED_MODULE_7___default.a,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 135
+    },
+    __self: undefined
+  })));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Consumator);
+
+/***/ }),
+
+/***/ "./src/components/Consumator/smallBanners.js":
+/*!***************************************************!*\
+  !*** ./src/components/Consumator/smallBanners.js ***!
+  \***************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime/helpers/esm/taggedTemplateLiteral.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+
+var _jsxFileName = "C:\\Users\\dront\\OneDrive\\Desktop\\djiars\\djiars\\src\\components\\Consumator\\smallBanners.js";
+
+function _templateObject6() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    color: #303233;\n    font-size: 16px;\n    line-height: 24px;\n    margin:5px;\n"]);
+
+  _templateObject6 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject5() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    font-size: 40px;\n"]);
+
+  _templateObject5 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject4() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    display: inline-block;\n    font-size: 16px;\n    font-weight: 600;\n    line-height: 46px;\n    height: 46px;\n    color: #303233;\n    cursor: pointer;\n"]);
+
+  _templateObject4 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject3() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    -webkit-box-flex: 1;\n    -moz-flex: 1;\n    flex: 1;\n    -webkit-box-pack: center;\n    -moz-justify-content: center;\n    justify-content: center\n"]);
+
+  _templateObject3 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject2() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    flex-basis: 50%;\n    max-width: 50%;\n    padding: 64px;\n"]);
+
+  _templateObject2 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    width:100%;\n    height: 240px;\n    padding: 64px;\n    display: -webkit-box;\n    display: flex;\n    -webkit-box-direction: normal;\n    -webkit-box-orient: vertical;\n    -moz-flex-direction: column;\n    flex-direction: column;\n    -webkit-box-pack: center;\n    -moz-justify-content: center;\n    justify-content: center;\n    background-size: 100%;\n    background-repeat: no-repeat;\n    background-position: center;\n"]);
+
+  _templateObject = function () {
+    return data;
+  };
+
+  return data;
+}
+
+
+
+const Wrapper = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject());
+const SectionContent = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject2());
+const Text = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject3());
+const MaiMultButton = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].a(_templateObject4());
+const H2 = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].h2(_templateObject5());
+const P = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].p(_templateObject6());
+
+class LearnButton extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
+  render() {
+    return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(MaiMultButton, {
+      className: "button button-primary",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 55
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
+      className: "fa fa-chevron-right",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 56
+      },
+      __self: this
+    }), "Vezi mai mult >");
+  }
+
+}
+
+class SmallBanner extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
+  render() {
+    const image = this.props.image;
+    var style = {
+      backgroundImage: 'url(' + image + ')'
+    };
+    return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Wrapper, {
+      style: style,
+      id: image,
+      className: "card-header",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 69
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(SectionContent, {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 70
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Text, {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 71
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(H2, {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 72
+      },
+      __self: this
+    }, this.props.title), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(P, {
+      className: "body-content",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 73
+      },
+      __self: this
+    }, this.props.text)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(LearnButton, {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 75
+      },
+      __self: this
+    })));
+  }
+
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (SmallBanner);
+
+/***/ }),
+
+/***/ "./src/components/Consumator/smallCard.js":
+/*!************************************************!*\
+  !*** ./src/components/Consumator/smallCard.js ***!
+  \************************************************/
+/*! exports provided: SmallCardHeader, SmallCardBody */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SmallCardHeader", function() { return SmallCardHeader; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SmallCardBody", function() { return SmallCardBody; });
+/* harmony import */ var C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime/helpers/esm/taggedTemplateLiteral.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+
+var _jsxFileName = "C:\\Users\\dront\\OneDrive\\Desktop\\djiars\\djiars\\src\\components\\Consumator\\smallCard.js";
+
+function _templateObject9() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    display: inline-block;\n    font-size: 16px;\n    font-weight: 600;\n    line-height: 46px;\n    height: 46px;\n    color: #303233;\n    cursor: pointer;\n"]);
+
+  _templateObject9 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject8() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    background: #3c3e40;\n    background-image: linear-gradient(-180deg,#3c3e40 0%,#303233 100%);\n    display: inline-block;\n    color: #fff;\n    font-size: 16px;\n    line-height: 16px;\n    padding: 15px 32px;\n    border: none;\n    border-radius: 2px;\n    outline: none;\n    cursor: pointer;\n    transition: all .3s ease;\n    margin:100px 100px 0 0 ;\n    &:hover{\n        background-image: linear-gradient(-180deg,#545759 0%,#303233 100%);\n    }\n"]);
+
+  _templateObject8 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject7() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\ncolor: #303233;\nfont-size: 16px;\nline-height: 24px;\nmargin-bottom: 16px;\nheight: 48px;\noverflow: hidden;\ntext-overflow: ellipsis;\ndisplay: -webkit-box;\n-webkit-line-clamp: 2;\n-webkit-box-orient: vertical;\n"]);
+
+  _templateObject7 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject6() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    font-size: 22px;\n    display: block;\n    max-width: 100%;\n    margin-bottom: 16px;\n"]);
+
+  _templateObject6 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject5() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    height: 32px;\n    margin-bottom: 16px;\n    // display: -webkit-box;\n    // display: flex;\n    -webkit-box-align: center;\n    -moz-align-items: center;\n    align-items: center;\n"]);
+
+  _templateObject5 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject4() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    padding: 48px 64px 64px;\n"]);
+
+  _templateObject4 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject3() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    padding: 0;\n    width: 100%;\n    height: 320px;\n    overflow: hidden;\n    background-size: 100%;\n    background-repeat: no-repeat;\n    background-position: center;\n"]);
+
+  _templateObject3 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject2() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    background: #fff;\n    transition: all .3s ease;\n    cursor: pointer;\n    margin-bottom: 20px;\n"]);
+
+  _templateObject2 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    // flex-basis: 48%;\n    // max-width: 48%;\n    position: relative;\n"]);
+
+  _templateObject = function () {
+    return data;
+  };
+
+  return data;
+}
+
+
+
+const Wrapper = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].section(_templateObject());
+const ProductItem = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject2());
+const Figure = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject3());
+const SectionContent = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject4());
+const Text = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject5());
+const H2 = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].h2(_templateObject6());
+const P = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].p(_templateObject7());
+const CumparaButton = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].a(_templateObject8());
+const MaiMultButton = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].a(_templateObject9());
+
+class SmallCardHeader extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
+  render() {
+    const image = this.props.image;
+    var style = {
+      backgroundImage: 'url(' + image + ')'
+    };
+    return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Figure, {
+      style: style,
+      id: image,
+      className: "card-header",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 90
+      },
+      __self: this
+    });
+  }
+
+}
+
+class SmallBuyButton extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
+  render() {
+    return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(CumparaButton, {
+      className: "button button-primary",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 98
+      },
+      __self: this
+    }, "CUMPARA ACUM");
+  }
+
+}
+
+class SmallLearnButton extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
+  render() {
+    return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(MaiMultButton, {
+      className: "button button-primary",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 106
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
+      className: "fa fa-chevron-right",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 107
+      },
+      __self: this
+    }), "Vezi mai mult >");
+  }
+
+}
+
+class SmallCardBody extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
+  render() {
+    return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Wrapper, {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 116
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(ProductItem, {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 117
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(SectionContent, {
+      className: "card-body",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 118
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Text, {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 119
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(H2, {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 120
+      },
+      __self: this
+    }, this.props.title), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(P, {
+      className: "body-content",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 121
+      },
+      __self: this
+    }, this.props.text)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(SmallBuyButton, {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 123
+      },
+      __self: this
+    }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(SmallLearnButton, {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 124
+      },
+      __self: this
+    }))));
+  }
+
+}
+
+
+
+/***/ }),
+
+/***/ "./src/components/Footer/categories.js":
+/*!*********************************************!*\
+  !*** ./src/components/Footer/categories.js ***!
+  \*********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime/helpers/esm/taggedTemplateLiteral.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var react_icons_md__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-icons/md */ "./node_modules/react-icons/md/index.esm.js");
+
+var _jsxFileName = "C:\\Users\\dront\\OneDrive\\Desktop\\djiars\\djiars\\src\\components\\Footer\\categories.js";
+
+function _templateObject5() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    list-style:none;\n    font-size: 1em;\n    transition: all .5s;\n    positon:absolute;\n    padding: 0 0 25px 0;\n    &:hover {\n        transform: translate(5px,0);\n    }\n"]);
+
+  _templateObject5 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject4() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    text-decoration:none;\n    color:#727272;\n    cursor:pointer;\n"]);
+
+  _templateObject4 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject3() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    font-size: 20px;\n    margin-bottom: 10px;\n    color: #fff;\n    font-weight: normal;\n"]);
+
+  _templateObject3 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject2() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    width: 36px;\n    height: 3px;\n    padding: 0;\n    margin: 5px auto 30px 0;\n    background-color: #727272;\n"]);
+
+  _templateObject2 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    width:25%;\n    position: relative;\n    margin-right: 4%;\n    float: left;\n\n"]);
+
+  _templateObject = function () {
+    return data;
+  };
+
+  return data;
+}
+
+
+
+
+const Wrapper = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject());
+const TitleLine = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject2());
+const Title = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].h2(_templateObject3());
+const Link = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].a(_templateObject4());
+const Li = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].li(_templateObject5());
+
+const Categories = () => {
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Wrapper, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 47
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Title, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 48
+    },
+    __self: undefined
+  }, "Categorii Produse"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(TitleLine, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 49
+    },
+    __self: undefined
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 50
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Link, {
+    href: "/consumator",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 51
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Li, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 51
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_icons_md__WEBPACK_IMPORTED_MODULE_3__["MdChevronRight"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 51
+    },
+    __self: undefined
+  }), "Consumator")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Link, {
+    href: "/profesional",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 52
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Li, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 52
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_icons_md__WEBPACK_IMPORTED_MODULE_3__["MdChevronRight"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 52
+    },
+    __self: undefined
+  }), "Profesional")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Link, {
+    href: "/enterprise",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 53
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Li, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 53
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_icons_md__WEBPACK_IMPORTED_MODULE_3__["MdChevronRight"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 53
+    },
+    __self: undefined
+  }), "Enterprise")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Link, {
+    href: "/piese",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 54
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Li, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 54
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_icons_md__WEBPACK_IMPORTED_MODULE_3__["MdChevronRight"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 54
+    },
+    __self: undefined
+  }), "Piese"))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Categories);
+
+/***/ }),
+
+/***/ "./src/components/Footer/copyright.js":
+/*!********************************************!*\
+  !*** ./src/components/Footer/copyright.js ***!
+  \********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime/helpers/esm/taggedTemplateLiteral.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var react_icons_md__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-icons/md */ "./node_modules/react-icons/md/index.esm.js");
+/* harmony import */ var react_icons_fa__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-icons/fa */ "./node_modules/react-icons/fa/index.esm.js");
+
+var _jsxFileName = "C:\\Users\\dront\\OneDrive\\Desktop\\djiars\\djiars\\src\\components\\Footer\\copyright.js";
+
+function _templateObject3() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    text-decoration:none;\n    color:#727272;\n    cursor:pointer;\n    display: flex;\n    -webkit-box-align: center;\n    -moz-align-items: center;\n    align-items: center;\n    font-size:1.5em;\n\n"]);
+
+  _templateObject3 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject2() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    font-size: 14px;\n    color: #fff;\n    font-weight: normal;\n    display: flex;\n    -webkit-box-align: end;\n    -moz-align-items: flex-end;\n    align-items: flex-end;\n"]);
+
+  _templateObject2 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    width:1200px;\n    margin:0 auto;\n    padding-bottom: 10px;\n    display: flex;\n    -webkit-box-align: end;\n    -moz-align-items: flex-end;\n    align-items: flex-end;\n    justify-content: space-between;\n"]);
+
+  _templateObject = function () {
+    return data;
+  };
+
+  return data;
+}
+
+
+
+
+
+const Wrapper = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject());
+const Title = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].h2(_templateObject2());
+const Link = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].a(_templateObject3());
+
+const Copyright = () => {
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Wrapper, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 42
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Title, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 43
+    },
+    __self: undefined
+  }, "Copyright djiars.ro", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_icons_md__WEBPACK_IMPORTED_MODULE_3__["MdCopyright"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 43
+    },
+    __self: undefined
+  }), " 2019"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Link, {
+    href: "https://www.facebook.com/RomaniaDJI",
+    target: "_blank",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 44
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_icons_fa__WEBPACK_IMPORTED_MODULE_4__["FaFacebookSquare"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 44
+    },
+    __self: undefined
+  })));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Copyright);
+
+/***/ }),
+
+/***/ "./src/components/Footer/description.js":
+/*!**********************************************!*\
+  !*** ./src/components/Footer/description.js ***!
+  \**********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime/helpers/esm/taggedTemplateLiteral.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var react_icons_md__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-icons/md */ "./node_modules/react-icons/md/index.esm.js");
+
+var _jsxFileName = "C:\\Users\\dront\\OneDrive\\Desktop\\djiars\\djiars\\src\\components\\Footer\\description.js";
+
+function _templateObject5() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    text-decoration:none;\n    color:#727272;\n"]);
+
+  _templateObject5 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject4() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    font-size: 1.2em;\n    margin: 15px 0px 15px 0;\n    font-weight: normal;\n    text-decoration:none;\n"]);
+
+  _templateObject4 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject3() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    font-size: 20px;\n    margin-bottom: 10px;\n    color: #fff;\n    font-weight: normal;\n"]);
+
+  _templateObject3 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject2() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    width: 36px;\n    height: 3px;\n    padding: 0;\n    margin: 5px auto 30px 0;\n    background-color: #727272;\n"]);
+
+  _templateObject2 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    width:25%;\n    position: relative;\n    margin-right: 4%;\n    float: left;\n"]);
+
+  _templateObject = function () {
+    return data;
+  };
+
+  return data;
+}
+
+
+
+
+
+
+const Wrapper = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject());
+const TitleLine = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject2());
+const Title = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].h2(_templateObject3());
+const Contact = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].h3(_templateObject4());
+const Link = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].a(_templateObject5());
+
+const Description = () => {
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Wrapper, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 41
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Title, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 42
+    },
+    __self: undefined
+  }, "Despre Companie"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(TitleLine, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 43
+    },
+    __self: undefined
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 44
+    },
+    __self: undefined
+  }, "Compania noastra a fost infiintata in luna mai 2015. Suntem prima companie cara se ocupa cu produsele DJI exclusiv in Romania. Gama noastra de produse acopera atat nevoile amatorilor cat si cele ale persoanelor care doresc echipamente profesionale."), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Contact, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 45
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_icons_md__WEBPACK_IMPORTED_MODULE_3__["MdLocationOn"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 45
+    },
+    __self: undefined
+  }), " Str.Piata Emanuil Gojdu, Nr. 37 A, Oradea, jud. Bihor"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Contact, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 46
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Link, {
+    href: "tel:+40773303447",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 46
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_icons_md__WEBPACK_IMPORTED_MODULE_3__["MdPhone"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 46
+    },
+    __self: undefined
+  }), " 0773303447")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Contact, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 47
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Link, {
+    href: "mailto:office@djiromania.ro",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 47
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_icons_md__WEBPACK_IMPORTED_MODULE_3__["MdEmail"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 47
+    },
+    __self: undefined
+  }), " office@djiromania.ro")));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Description);
+
+/***/ }),
+
+/***/ "./src/components/Footer/footer.js":
+/*!*****************************************!*\
+  !*** ./src/components/Footer/footer.js ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime/helpers/esm/taggedTemplateLiteral.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _description__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./description */ "./src/components/Footer/description.js");
+/* harmony import */ var _categories__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./categories */ "./src/components/Footer/categories.js");
+/* harmony import */ var _utile__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./utile */ "./src/components/Footer/utile.js");
+/* harmony import */ var _copyright__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./copyright */ "./src/components/Footer/copyright.js");
+
+var _jsxFileName = "C:\\Users\\dront\\OneDrive\\Desktop\\djiars\\djiars\\src\\components\\Footer\\footer.js";
+
+function _templateObject3() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\nwidth: 100%;\nmargin: 0;\nbackground-color: #222222;\ncolor: #727272;\n"]);
+
+  _templateObject3 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject2() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    width: 1200px;\n    margin:0 auto;\n    background-color: #222222;\n"]);
+
+  _templateObject2 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    width: 100%;\n    float: left;\n    padding: 100px 0 25px 0;\n    margin: 0;\n    background-color: #222222;\n    color: #727272;\n"]);
+
+  _templateObject = function () {
+    return data;
+  };
+
+  return data;
+}
+
+
+
+
+
+
+
+const Wrapper = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject());
+const Container = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject2());
+const BottomLinks = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject3());
+
+const Footer = () => {
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Wrapper, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 31
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Container, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 32
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_description__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 33
+    },
+    __self: undefined
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_categories__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 34
+    },
+    __self: undefined
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_utile__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 35
+    },
+    __self: undefined
+  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Container, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 37
+    },
+    __self: undefined
+  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(BottomLinks, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 40
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_copyright__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 40
+    },
+    __self: undefined
+  })));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Footer);
+
+/***/ }),
+
+/***/ "./src/components/Footer/utile.js":
+/*!****************************************!*\
+  !*** ./src/components/Footer/utile.js ***!
+  \****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime/helpers/esm/taggedTemplateLiteral.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var react_icons_md__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-icons/md */ "./node_modules/react-icons/md/index.esm.js");
+
+var _jsxFileName = "C:\\Users\\dront\\OneDrive\\Desktop\\djiars\\djiars\\src\\components\\Footer\\utile.js";
+
+function _templateObject5() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    list-style:none;\n    font-size: 1em;\n    transition: all .5s;\n    positon:absolute;\n    padding: 0 0 25px 0;\n    &:hover {\n        transform: translate(5px,0);\n    }\n"]);
+
+  _templateObject5 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject4() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    text-decoration:none;\n    color:#727272;\n    cursor:pointer;\n"]);
+
+  _templateObject4 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject3() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    font-size: 20px;\n    margin-bottom: 10px;\n    color: #fff;\n    font-weight: normal;\n"]);
+
+  _templateObject3 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject2() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    width: 36px;\n    height: 3px;\n    padding: 0;\n    margin: 5px auto 30px 0;\n    background-color: #727272;\n"]);
+
+  _templateObject2 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    width:25%;\n    position: relative;\n    margin-right: 4%;\n    float: left;\n"]);
+
+  _templateObject = function () {
+    return data;
+  };
+
+  return data;
+}
+
+
+
+
+const Wrapper = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject());
+const TitleLine = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject2());
+const Title = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].h2(_templateObject3());
+const Link = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].a(_templateObject4());
+const Li = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].li(_templateObject5());
+
+const Utile = () => {
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Wrapper, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 46
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Title, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 47
+    },
+    __self: undefined
+  }, "Link-uri Utile"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(TitleLine, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 48
+    },
+    __self: undefined
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 49
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Link, {
+    href: "/contact",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 50
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Li, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 50
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_icons_md__WEBPACK_IMPORTED_MODULE_3__["MdChevronRight"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 50
+    },
+    __self: undefined
+  }), "Contact")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Link, {
+    href: "/stiri-dji",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 51
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Li, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 51
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_icons_md__WEBPACK_IMPORTED_MODULE_3__["MdChevronRight"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 51
+    },
+    __self: undefined
+  }), "Stiri DJI"))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Utile);
+
+/***/ }),
+
+/***/ "./src/components/Navigation/navigation.js":
+/*!*************************************************!*\
+  !*** ./src/components/Navigation/navigation.js ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime/helpers/esm/taggedTemplateLiteral.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _images_logo_logo_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../images/logo/logo.png */ "./src/images/logo/logo.png");
+/* harmony import */ var _images_logo_logo_png__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_images_logo_logo_png__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var react_icons_io__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-icons/io */ "./node_modules/react-icons/io/index.esm.js");
+
+var _jsxFileName = "C:\\Users\\dront\\OneDrive\\Desktop\\djiars\\djiars\\src\\components\\Navigation\\navigation.js";
+
+function _templateObject7() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    max-width:200px;\n    height:72px;\n    margin-top:10px;\n\n"]);
+
+  _templateObject7 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject6() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    text-decoration:none;\n    cursor:pointer\n"]);
+
+  _templateObject6 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject5() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    padding: 16px;\n"]);
+
+  _templateObject5 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject4() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    max-width: 960px;\n    background: #fff;\n    margin:0 auto;\n    display: flex;\n    padding: 10px;\n    text-decoration:none;\n    list-style-type:none;\n"]);
+
+  _templateObject4 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject3() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    margin-right:15px;\n    float: right;\n    padding: 0 10px;\n    border-left: 1px solid #ddd;\n    height: 24px;\n    text-decoration:none;\n    cursor:pointer;\n    font-size: 24px;\n    color:#000;\n\n"]);
+
+  _templateObject3 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject2() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    width: 100%;\n    background: #f7f8f9;\n    float: right;\n    height:26px;\n    padding:5px;"]);
+
+  _templateObject2 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    width:100%;\n    margin: 0;\n    padding: 0;\n    height: 100%;\n"]);
+
+  _templateObject = function () {
+    return data;
+  };
+
+  return data;
+}
+
+
+
+
+
+const Nav = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].nav(_templateObject());
+const Menu = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject2());
+const MenuElements = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].a(_templateObject3());
+const MainMenu = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].ul(_templateObject4());
+const MainMenuElements = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].li(_templateObject5());
+const MainMenuLinks = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].a(_templateObject6());
+const Logo = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].img(_templateObject7());
+
+const Navigation = () => {
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Nav, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 59
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Menu, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 60
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(MenuElements, {
+    href: "/logare",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 61
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_icons_io__WEBPACK_IMPORTED_MODULE_4__["IoMdPerson"], {
+    style: {
+      margin: "0px 5px 0 5px"
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 61
+    },
+    __self: undefined
+  }))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(MainMenu, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 63
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(MainMenuElements, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 64
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(MainMenuLinks, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 64
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Logo, {
+    src: _images_logo_logo_png__WEBPACK_IMPORTED_MODULE_3___default.a,
+    alt: "DJI ARS Oradea Logo",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 64
+    },
+    __self: undefined
+  }))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(MainMenuElements, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 65
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(MainMenuLinks, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 65
+    },
+    __self: undefined
+  }, "Consumator")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(MainMenuElements, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 66
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(MainMenuLinks, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 66
+    },
+    __self: undefined
+  }, "Profesional")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(MainMenuElements, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 67
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(MainMenuLinks, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 67
+    },
+    __self: undefined
+  }, "Enterprise")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(MainMenuElements, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 68
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(MainMenuLinks, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 68
+    },
+    __self: undefined
+  }, "Piese")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(MainMenuElements, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 69
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(MainMenuLinks, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 69
+    },
+    __self: undefined
+  }, "Explorati")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(MainMenuElements, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 70
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(MainMenuLinks, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 70
+    },
+    __self: undefined
+  }, "Contact"))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Navigation);
+
+/***/ }),
+
+/***/ "./src/components/ServiceList/serviceList.js":
+/*!***************************************************!*\
+  !*** ./src/components/ServiceList/serviceList.js ***!
+  \***************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime/helpers/esm/taggedTemplateLiteral.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+
+var _jsxFileName = "C:\\Users\\dront\\OneDrive\\Desktop\\djiars\\djiars\\src\\components\\ServiceList\\serviceList.js";
+
+function _templateObject5() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    font-size: 24px;\n    font-weight: 500;\n    line-height: 32px;\n"]);
+
+  _templateObject5 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject4() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    position: relative;\n    display: inline-block;\n    padding: 55px 55px;\n    border-left: 1px solid #f2f2f2;\n    color: #303233;\n    width: 100%;\n    cursor: pointer;\n    transition: all .4s;\n    text-decoration:none;\n    &::before{\n        display: block;\n        content: '';\n        position: absolute;\n        width: 3px;\n        height: 46px;\n        background-color: #c2c8cc;\n        left: 0;\n        top: 50%;\n        margin-top: -23px;\n        border-top-right-radius: 3px;\n        border-bottom-right-radius: 3px;\n        transition: all .4s;\n    }\n    &:hover{\n        text-decoration: none;\n        color: #727272;\n        transition: all 0.3s ease-out 0s;\n        &::before{\n            background-color: #109ee6;\n        }\n    }\n"]);
+
+  _templateObject4 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject3() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    display: inline-block;\n    width: 33.3%;\n    vertical-align: bottom;\n    background-color: #fff;\n"]);
+
+  _templateObject3 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject2() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    list-style: none;\n    margin:0 auto;\n"]);
+
+  _templateObject2 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    max-width: 1200px;\n    margin:0 auto;\n    display: flex;\n    flex-wrap: wrap;\n    padding:10px;\n"]);
+
+  _templateObject = function () {
+    return data;
+  };
+
+  return data;
+}
+
+
+
+const Wrapper = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject());
+const Ul = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].ul(_templateObject2());
+const Li = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].li(_templateObject3());
+const Link = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].a(_templateObject4());
+const Title = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].h2(_templateObject5());
+
+const ServiceList = () => {
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Wrapper, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 61
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Ul, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 62
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Li, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 63
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Link, {
+    href: "#",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 64
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Title, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 64
+    },
+    __self: undefined
+  }, "De unde sa cumpar?"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Li, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 67
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Link, {
+    href: "#",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 68
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Title, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 68
+    },
+    __self: undefined
+  }, "Suntem aici sa te ajutam!"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Li, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 70
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Link, {
+    href: "#",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 71
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Title, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 71
+    },
+    __self: undefined
+  }, "Zboara in siguranta")))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (ServiceList);
+
+/***/ }),
+
+/***/ "./src/components/Slider/homeSlider.js":
+/*!*********************************************!*\
+  !*** ./src/components/Slider/homeSlider.js ***!
+  \*********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return DemoCarousel; });
+/* harmony import */ var C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime/helpers/esm/taggedTemplateLiteral.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var react_responsive_carousel_lib_styles_carousel_min_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-responsive-carousel/lib/styles/carousel.min.css */ "./node_modules/react-responsive-carousel/lib/styles/carousel.min.css");
+/* harmony import */ var react_responsive_carousel_lib_styles_carousel_min_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_responsive_carousel_lib_styles_carousel_min_css__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var react_responsive_carousel__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-responsive-carousel */ "./node_modules/react-responsive-carousel/lib/index.js");
+/* harmony import */ var react_responsive_carousel__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_responsive_carousel__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _images_SliderImages_osmo_pocket_background_jpg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../images/SliderImages/osmo_pocket_background.jpg */ "./src/images/SliderImages/osmo_pocket_background.jpg");
+/* harmony import */ var _images_SliderImages_osmo_pocket_background_jpg__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_images_SliderImages_osmo_pocket_background_jpg__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _images_SliderImages_osmo_pocket_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../images/SliderImages/osmo_pocket.png */ "./src/images/SliderImages/osmo_pocket.png");
+/* harmony import */ var _images_SliderImages_osmo_pocket_png__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_images_SliderImages_osmo_pocket_png__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _images_SliderImages_osmo_pocket_title_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../images/SliderImages/osmo_pocket_title.png */ "./src/images/SliderImages/osmo_pocket_title.png");
+/* harmony import */ var _images_SliderImages_osmo_pocket_title_png__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_images_SliderImages_osmo_pocket_title_png__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _images_SliderImages_osmo_action_png__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../images/SliderImages/osmo_action.png */ "./src/images/SliderImages/osmo_action.png");
+/* harmony import */ var _images_SliderImages_osmo_action_png__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_images_SliderImages_osmo_action_png__WEBPACK_IMPORTED_MODULE_8__);
+
+var _jsxFileName = "C:\\Users\\dront\\OneDrive\\Desktop\\djiars\\djiars\\src\\components\\Slider\\homeSlider.js";
+
+function _templateObject7() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  width:351;\n  margin:0 auto;\n  padding-top:75px;\n"]);
+
+  _templateObject7 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject6() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  font-size: 24px;\n  color:#fff;\n  padding-top:25px;\n"]);
+
+  _templateObject6 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject5() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  background-image: linear-gradient(top,#282c35,#090b18);background-image: -webkit-linear-gradient(top,#282c35,#090b18);background-image: -o-linear-gradient(top,#282c35,#090b18);background-image: -ms-linear-gradient(top,#282c35,#090b18);background-image: -moz-linear-gradient(top,#282c35,#090b18);\n  max-height:750px;\n  width:100%;\n  "]);
+
+  _templateObject5 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject4() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  background-image:url(", ");\n  max-height:750px;\n  width:100%;\n\n"]);
+
+  _templateObject4 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject3() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  width:100%;\n"]);
+
+  _templateObject3 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject2() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n\n"]);
+
+  _templateObject2 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n\n"]);
+
+  _templateObject = function () {
+    return data;
+  };
+
+  return data;
+}
+
+
+
+
+
+
+
+
+
+const Background1 = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].img(_templateObject());
+const Background2 = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].img(_templateObject2());
+const Wrapper = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject3());
+const Banner1 = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject4(), _images_SliderImages_osmo_pocket_background_jpg__WEBPACK_IMPORTED_MODULE_5___default.a);
+const Banner2 = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject5());
+const BannerDescription = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].h3(_templateObject6());
+const BannerTitle = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].img(_templateObject7());
+class DemoCarousel extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
+  render() {
+    return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Wrapper, {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 45
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_responsive_carousel__WEBPACK_IMPORTED_MODULE_4__["Carousel"], {
+      infiniteLoop: true,
+      autoPlay: true,
+      swipeable: true,
+      interval: 7000,
+      showThumbs: false,
+      showStatus: false,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 46
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Banner1, {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 47
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(BannerTitle, {
+      style: {
+        width: '351px'
+      },
+      src: _images_SliderImages_osmo_pocket_title_png__WEBPACK_IMPORTED_MODULE_7___default.a,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 48
+      },
+      __self: this
+    }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(BannerDescription, {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 49
+      },
+      __self: this
+    }, "See the Bigger Picture"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Background1, {
+      style: {
+        width: '1300px'
+      },
+      src: _images_SliderImages_osmo_pocket_png__WEBPACK_IMPORTED_MODULE_6___default.a,
+      alt: "Osmo Pocket",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 50
+      },
+      __self: this
+    })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Banner2, {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 52
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(BannerTitle, {
+      style: {
+        width: '351px'
+      },
+      src: _images_SliderImages_osmo_pocket_title_png__WEBPACK_IMPORTED_MODULE_7___default.a,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 53
+      },
+      __self: this
+    }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(BannerDescription, {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 54
+      },
+      __self: this
+    }, "Unleash Your Other Side"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Background2, {
+      style: {
+        width: '756px'
+      },
+      src: _images_SliderImages_osmo_action_png__WEBPACK_IMPORTED_MODULE_8___default.a,
+      alt: "Osmo Action",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 55
+      },
+      __self: this
+    }))));
+  }
+
+}
+
+/***/ }),
+
+/***/ "./src/components/User/inregistrare.js":
+/*!*********************************************!*\
+  !*** ./src/components/User/inregistrare.js ***!
+  \*********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime/helpers/esm/taggedTemplateLiteral.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _images_user_user_page_jpeg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../images/user/user_page.jpeg */ "./src/images/user/user_page.jpeg");
+/* harmony import */ var _images_user_user_page_jpeg__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_images_user_user_page_jpeg__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _images_logo_logo_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../images/logo/logo.png */ "./src/images/logo/logo.png");
+/* harmony import */ var _images_logo_logo_png__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_images_logo_logo_png__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _logare_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./logare.css */ "./src/components/User/logare.css");
+/* harmony import */ var _logare_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_logare_css__WEBPACK_IMPORTED_MODULE_5__);
+
+var _jsxFileName = "C:\\Users\\dront\\OneDrive\\Desktop\\djiars\\djiars\\src\\components\\User\\inregistrare.js";
+
+function _templateObject18() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\nmargin-top:25px;\n"]);
+
+  _templateObject18 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject17() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    cursor:pointer;\n    color:#44a8f2;\n    text-decoration:none;\n    margin-top:15px;\n"]);
+
+  _templateObject17 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject16() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    position: relative;\n    width: 100%;\n    height: 44px;\n    padding: 20px 0 0 10px;\n    display: block;\n    border-radius: 2px;\n    border: 1px solid #ddd;\n    background: transparent;\n    margin: 5px;\n    padding:5px;\n"]);
+
+  _templateObject16 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject15() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    width: 100%;\n    height: 44px;\n    margin: 20px 0 0;\n    display: -ms-flexbox;\n    display: flex;\n    position: relative;\n\n"]);
+
+  _templateObject15 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject14() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    display: -ms-flexbox;\n    display: flex;\n    -ms-flex-wrap: wrap;\n    flex-wrap: wrap;\n    margin-right: 0;\n    margin-left: 0;\n"]);
+
+  _templateObject14 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject13() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    margin-top: 5px;\n    width: 300px;\n    margin: 0 auto;\n"]);
+
+  _templateObject13 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject12() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    color: #3b3e40;\n    font-weight: 500;\n    font-size: 30px;\n    padding:50px;\n"]);
+
+  _templateObject12 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject11() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    text-align: center!important;\n    padding:150px;\n"]);
+
+  _templateObject11 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject10() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    display: -webkit-flex;\n    display: -moz-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-justify-content: center;\n    -moz-box-pack: center;\n    -ms-flex-pack: center;\n    justify-content: center;\n    -webkit-align-items: center;\n    -moz-box-align: center;\n    -ms-flex-align: center;\n    align-items: center;\n"]);
+
+  _templateObject10 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject9() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    display: block;\n    margin: 50px 0 0 0;\n"]);
+
+  _templateObject9 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject8() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    width:100%;\n    margin:0 auto;\n"]);
+
+  _templateObject8 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject7() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    flex: 0 0 50%;\n    max-width: 50%;\n"]);
+
+  _templateObject7 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject6() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    flex: 0 0 49%;\n    max-width: 49%;\n    border-right: 1px solid rgba(192,192,192,0.4);\n"]);
+
+  _templateObject6 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject5() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    display: -ms-flexbox;\n    display: flex;\n    -ms-flex-wrap: wrap;\n    flex-wrap: wrap;\n    margin-right: 0;\n    margin-left: 0;\n"]);
+
+  _templateObject5 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject4() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    display: block;\n    margin: 25px 0 25px 0;\n\n"]);
+
+  _templateObject4 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject3() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    width:100%;\n    margin: 0 auto;\n"]);
+
+  _templateObject3 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject2() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    width:1200px;\n    margin: 0 auto;\n    background-color: #fff;\n    padding: 0;\n    box-shadow: 0 5px 50px 0 rgba(0,0,0,.15);\n"]);
+
+  _templateObject2 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    width:100%;\n    display: flex;\n    min-height: calc(100% - 92px);\n    -ms-flex-pack: center;\n    justify-content: center;\n    -ms-flex-align: center;\n    align-items: center;\n    padding:75px;\n"]);
+
+  _templateObject = function () {
+    return data;
+  };
+
+  return data;
+}
+
+
+
+
+
+
+const Wrapper = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject());
+const Container = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject2());
+const Logo = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].img(_templateObject3());
+const LogoWrap = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject4());
+const Row = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject5());
+const Left = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject6());
+const Right = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject7());
+const LoginImage = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].img(_templateObject8());
+const ImageWrap = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject9());
+const Login = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject10());
+const TitleCenter = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject11());
+const Title = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].h1(_templateObject12());
+const Form = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].form(_templateObject13());
+const FormRow = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject14());
+const FormElement = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject15());
+const Input = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].input(_templateObject16());
+const Register = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].p(_templateObject17());
+const RegisterWrap = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject18());
+
+const Inregistrare = ({
+  onRouteChange
+}) => {
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Wrapper, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 130
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Container, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 131
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Row, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 132
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Left, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 133
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(LogoWrap, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 134
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Logo, {
+    src: _images_logo_logo_png__WEBPACK_IMPORTED_MODULE_4___default.a,
+    alt: "Osmo Pocket",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 134
+    },
+    __self: undefined
+  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(ImageWrap, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 135
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(LoginImage, {
+    src: _images_user_user_page_jpeg__WEBPACK_IMPORTED_MODULE_3___default.a,
+    alt: "Osmo Pocket",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 135
+    },
+    __self: undefined
+  }))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Right, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 137
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Login, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 138
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(TitleCenter, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 139
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Title, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 140
+    },
+    __self: undefined
+  }, "INREGISTRARE"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Form, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 141
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(FormRow, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 142
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(FormElement, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 143
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Input, {
+    type: "email",
+    name: "username",
+    maxlength: "100",
+    placeholder: "Adresa de email*",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 144
+    },
+    __self: undefined
+  }))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(FormRow, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 147
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(FormElement, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 148
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Input, {
+    type: "email",
+    name: "username",
+    maxlength: "100",
+    placeholder: "Adresa de email*",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 149
+    },
+    __self: undefined
+  }))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(FormRow, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 152
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(FormElement, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 153
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Input, {
+    type: "password",
+    name: "password",
+    maxlength: "100",
+    placeholder: "Parola*",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 154
+    },
+    __self: undefined
+  }))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(FormRow, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 157
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(FormElement, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 158
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Input, {
+    onClick: () => onRouteChange('home'),
+    className: "submitBtn",
+    type: "submit",
+    name: "submit",
+    value: "Creaza cont",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 159
+    },
+    __self: undefined
+  })))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(RegisterWrap, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 163
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Register, {
+    onClick: () => onRouteChange('logare'),
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 164
+    },
+    __self: undefined
+  }, "Logheaza-te"))))))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Inregistrare);
+
+/***/ }),
+
+/***/ "./src/components/User/logare.css":
+/*!****************************************!*\
+  !*** ./src/components/User/logare.css ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./logare.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/User/logare.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(true) {
+	module.hot.accept(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./logare.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/User/logare.css", function() {
+		var newContent = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./logare.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/User/logare.css");
+
+		if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
+
+		var locals = (function(a, b) {
+			var key, idx = 0;
+
+			for(key in a) {
+				if(!b || a[key] !== b[key]) return false;
+				idx++;
+			}
+
+			for(key in b) idx--;
+
+			return idx === 0;
+		}(content.locals, newContent.locals));
+
+		if(!locals) throw new Error('Aborting CSS HMR due to changed css-modules locals.');
+
+		update(newContent);
+	});
+
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ "./src/components/User/logare.js":
+/*!***************************************!*\
+  !*** ./src/components/User/logare.js ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime/helpers/esm/taggedTemplateLiteral.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _images_user_user_page_jpeg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../images/user/user_page.jpeg */ "./src/images/user/user_page.jpeg");
+/* harmony import */ var _images_user_user_page_jpeg__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_images_user_user_page_jpeg__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _images_logo_logo_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../images/logo/logo.png */ "./src/images/logo/logo.png");
+/* harmony import */ var _images_logo_logo_png__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_images_logo_logo_png__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _logare_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./logare.css */ "./src/components/User/logare.css");
+/* harmony import */ var _logare_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_logare_css__WEBPACK_IMPORTED_MODULE_5__);
+
+var _jsxFileName = "C:\\Users\\dront\\OneDrive\\Desktop\\djiars\\djiars\\src\\components\\User\\logare.js";
+
+function _templateObject18() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\nmargin-top:25px;\n"]);
+
+  _templateObject18 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject17() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    cursor:pointer;\n    color:#44a8f2;\n    text-decoration:none;\n    margin-top:15px;\n"]);
+
+  _templateObject17 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject16() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    position: relative;\n    width: 100%;\n    height: 44px;\n    padding: 20px 0 0 10px;\n    display: block;\n    border-radius: 2px;\n    border: 1px solid #ddd;\n    background: transparent;\n    margin: 5px;\n    padding:5px;\n"]);
+
+  _templateObject16 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject15() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    width: 100%;\n    height: 44px;\n    margin: 20px 0 0;\n    display: -ms-flexbox;\n    display: flex;\n    position: relative;\n\n"]);
+
+  _templateObject15 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject14() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    display: -ms-flexbox;\n    display: flex;\n    -ms-flex-wrap: wrap;\n    flex-wrap: wrap;\n    margin-right: 0;\n    margin-left: 0;\n"]);
+
+  _templateObject14 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject13() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    margin-top: 5px;\n    width: 300px;\n    margin: 0 auto;\n"]);
+
+  _templateObject13 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject12() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    color: #3b3e40;\n    font-weight: 500;\n    font-size: 30px;\n    padding:50px;\n"]);
+
+  _templateObject12 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject11() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    text-align: center!important;\n    padding:150px;\n"]);
+
+  _templateObject11 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject10() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    display: -webkit-flex;\n    display: -moz-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-justify-content: center;\n    -moz-box-pack: center;\n    -ms-flex-pack: center;\n    justify-content: center;\n    -webkit-align-items: center;\n    -moz-box-align: center;\n    -ms-flex-align: center;\n    align-items: center;\n"]);
+
+  _templateObject10 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject9() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    display: block;\n    margin: 50px 0 0 0;\n"]);
+
+  _templateObject9 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject8() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    width:100%;\n    margin:0 auto;\n"]);
+
+  _templateObject8 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject7() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    flex: 0 0 50%;\n    max-width: 50%;\n"]);
+
+  _templateObject7 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject6() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    flex: 0 0 49%;\n    max-width: 49%;\n    border-right: 1px solid rgba(192,192,192,0.4);\n"]);
+
+  _templateObject6 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject5() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    display: -ms-flexbox;\n    display: flex;\n    -ms-flex-wrap: wrap;\n    flex-wrap: wrap;\n    margin-right: 0;\n    margin-left: 0;\n"]);
+
+  _templateObject5 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject4() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    display: block;\n    margin: 25px 0 25px 0;\n\n"]);
+
+  _templateObject4 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject3() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    width:100%;\n    margin: 0 auto;\n"]);
+
+  _templateObject3 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject2() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    width:1200px;\n    margin: 0 auto;\n    background-color: #fff;\n    padding: 0;\n    box-shadow: 0 5px 50px 0 rgba(0,0,0,.15);\n"]);
+
+  _templateObject2 = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  const data = Object(C_Users_dront_OneDrive_Desktop_djiars_djiars_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    width:100%;\n    display: flex;\n    min-height: calc(100% - 92px);\n    -ms-flex-pack: center;\n    justify-content: center;\n    -ms-flex-align: center;\n    align-items: center;\n    padding:75px;\n"]);
+
+  _templateObject = function () {
+    return data;
+  };
+
+  return data;
+}
+
+
+
+
+
+
+const Wrapper = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject());
+const Container = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject2());
+const Logo = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].img(_templateObject3());
+const LogoWrap = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject4());
+const Row = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject5());
+const Left = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject6());
+const Right = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject7());
+const LoginImage = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].img(_templateObject8());
+const ImageWrap = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject9());
+const Login = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject10());
+const TitleCenter = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject11());
+const Title = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].h1(_templateObject12());
+const Form = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].form(_templateObject13());
+const FormRow = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject14());
+const FormElement = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject15());
+const Input = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].input(_templateObject16());
+const Register = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].p(_templateObject17());
+const RegisterWrap = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject18());
+
+const Logare = ({
+  onRouteChange
+}) => {
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Wrapper, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 130
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Container, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 131
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Row, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 132
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Left, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 133
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(LogoWrap, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 134
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Logo, {
+    src: _images_logo_logo_png__WEBPACK_IMPORTED_MODULE_4___default.a,
+    alt: "Osmo Pocket",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 134
+    },
+    __self: undefined
+  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(ImageWrap, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 135
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(LoginImage, {
+    src: _images_user_user_page_jpeg__WEBPACK_IMPORTED_MODULE_3___default.a,
+    alt: "Osmo Pocket",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 135
+    },
+    __self: undefined
+  }))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Right, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 137
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Login, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 138
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(TitleCenter, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 139
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Title, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 140
+    },
+    __self: undefined
+  }, "LOGARE"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Form, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 141
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(FormRow, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 142
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(FormElement, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 143
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Input, {
+    type: "email",
+    name: "username",
+    maxlength: "100",
+    placeholder: "Adresa de email*",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 144
+    },
+    __self: undefined
+  }))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(FormRow, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 147
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(FormElement, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 148
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Input, {
+    type: "password",
+    name: "password",
+    maxlength: "100",
+    placeholder: "Parola*",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 149
+    },
+    __self: undefined
+  }))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(FormRow, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 152
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(FormElement, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 153
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Input, {
+    onClick: () => onRouteChange('home'),
+    className: "submitBtn",
+    type: "submit",
+    name: "submit",
+    value: "Logeaza-te",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 154
+    },
+    __self: undefined
+  })))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(RegisterWrap, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 158
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Register, {
+    onClick: () => onRouteChange('inregistrare'),
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 159
+    },
+    __self: undefined
+  }, "Creaza un cont"))))))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Logare);
+
+/***/ }),
+
+/***/ "./src/images/Consumator/banner_consumator.jpg":
+/*!*****************************************************!*\
+  !*** ./src/images/Consumator/banner_consumator.jpg ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/media/banner_consumator.b91e0057.jpg";
+
+/***/ }),
+
+/***/ "./src/images/Consumator/mavic_2_pro.jpg":
+/*!***********************************************!*\
+  !*** ./src/images/Consumator/mavic_2_pro.jpg ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/media/mavic_2_pro.09f0b89f.jpg";
+
+/***/ }),
+
+/***/ "./src/images/Consumator/mavic_2_zoom.jpg":
+/*!************************************************!*\
+  !*** ./src/images/Consumator/mavic_2_zoom.jpg ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/media/mavic_2_zoom.34df95f9.jpg";
+
+/***/ }),
+
+/***/ "./src/images/Consumator/mavic_air.jpg":
+/*!*********************************************!*\
+  !*** ./src/images/Consumator/mavic_air.jpg ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/media/mavic_air.3c9d9a83.jpg";
+
+/***/ }),
+
+/***/ "./src/images/Consumator/mavic_pro.jpg":
+/*!*********************************************!*\
+  !*** ./src/images/Consumator/mavic_pro.jpg ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/media/mavic_pro.eb3a0fd2.jpg";
+
+/***/ }),
+
+/***/ "./src/images/Consumator/mavic_pro_platinum.jpg":
+/*!******************************************************!*\
+  !*** ./src/images/Consumator/mavic_pro_platinum.jpg ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/media/mavic_pro_platinum.f298407e.jpg";
+
+/***/ }),
+
+/***/ "./src/images/Consumator/mavic_series.jpg":
+/*!************************************************!*\
+  !*** ./src/images/Consumator/mavic_series.jpg ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/media/mavic_series.115dd4fd.jpg";
+
+/***/ }),
+
+/***/ "./src/images/SliderImages/osmo_action.png":
+/*!*************************************************!*\
+  !*** ./src/images/SliderImages/osmo_action.png ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/media/osmo_action.afcfad94.png";
+
+/***/ }),
+
+/***/ "./src/images/SliderImages/osmo_pocket.png":
+/*!*************************************************!*\
+  !*** ./src/images/SliderImages/osmo_pocket.png ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/media/osmo_pocket.c61b3792.png";
+
+/***/ }),
+
+/***/ "./src/images/SliderImages/osmo_pocket_background.jpg":
+/*!************************************************************!*\
+  !*** ./src/images/SliderImages/osmo_pocket_background.jpg ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/media/osmo_pocket_background.c725808c.jpg";
+
+/***/ }),
+
+/***/ "./src/images/SliderImages/osmo_pocket_title.png":
+/*!*******************************************************!*\
+  !*** ./src/images/SliderImages/osmo_pocket_title.png ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAV8AAAAkCAYAAAAuJzk3AAAJUklEQVR4nO1d7VUjOwwdv/MayJaQLQFKCCVACVBCKAFKgBKyJSQlQAmhBFLC7Jl37jy8E0mW5Y+ZLL7n5A8kM/K1LcuyJHcNDQ0NDQ0NDQ0N3wJuKY3s+35D/PndOXcq+M5113Vr708fzrkPw3OunHPveaULvnPVdd3KIi/xrOrcXxKWxs8w3oa+9//mnDvMIUvDBWIYQH3fP/V9/9bLOPZ9/8JMgGgMChfP+2TeeoRca+2z8bvbWr0wKF7wtjX+fhbuFXJtA/L4GPpvD/nusRjlkmMdyU/RvjfIo+4vhvOY398ycpD9EdnHIZyN/8zP97HXcrJYYOLvjQQcUxSBYXKrlJv3/asavGOC9bHKd07ulfKlTJxP/N6shDPwk1UJe4aCVZ5gf6UoX/A1NWLEedCU70zA6p0Du9hJljCIXxTPHlFcAU/aoVa+c3IfIWOOiXO09EHGSbvPwU9GecTxa1W+3u5rivtK7eovXfn+k/uBFNBRg/CmbTKBwcLYaycZOkkcFALuQwPKwwpyFVNOse2Ym/sZsIZ8KrcR+Nl1Xfek+PrgVw352AfF9ZbCDxSmRh4N7qEkc4/JQcZpG5+dc6+Z3/PX4t/SDUOn74mOSsUVJtm14tApVfEMq+kv5QHLqIBvch7IYAGImpAL4T4Vj8PhliDHBh8fKyiHG8W7d8TvRwyK5OCc+zX9B5TrBovhVNGvvTEQdRALxcstsK9YAA7TsQVrdZRnqmivwMddjCyCjFsswj4GmR6Nj5T6WAI19n4pnvVEzInQWLm8w2dsU0PY4dBk433uAwdjI8RVnTkQGLEdLRS8l5J1F7KiLHJFcsi1QVxU5ube0E7rFviekU/0wQquKLXlLMjdSwdPpeSBJc+5mM74iOWcGYuf2namHvDlAOXXr/n+KlD4XzSKTRpMI1iLUJCB9IV5E+BTe4AitS+VZ+ZQYwSrfJfAvaGtKYc/1G9Zf6ewoAV9/MLzqH5SjYEC8vgLEnt4HMO5MBbVO6umfCsAE1eynGJP6jnrJjRgOOsvpLhiLBYJpsnThRUv24alcG9ob2rY07TNR+Z7HD/mvupkBSq2AfIcC8izxe4kNvrgTF5BxtgziKZ8SyNgeeVYzacgTyOFrVxOiy2E6PYKg91HjDVTnXvDO1KVr2pSMe95K9gGkR+G2yzyGOWllC8VgmcZ1035loaUxJDy6oAf82wbHVBEWQ6ihOf7UFsIQhjPFJzyXQT3hufXUr7UopbLeucWTZafkvIo5A1yzrieTItDU75fKBJqBl8pt21/Tny8dKJK+Wil0/i9NUvMgJcIBbyzRigsjPvFAQvuVBG+50rPRRQCFW5F8lNanlRgzE7nyEkZSdIgoFScL7fKn1LjABHaxIWSnK2gCBPiwkQGJfUEyyNriiqDYCoqtnIplsBiuJ8BGuubkvMslCwR1PM4fmrIYwIWBso9lzWM8ruilPLlBlqu4jPc4OSsxZDFt0Yc5DE1RVWBF87dEYjx1GJp3FcBtq5T5UtZj1TfZi2KhEVqqpw4forLYwHmwI6Q76F2Eam/FVUy3Dzk2kpxrgRSaTrnnpXvXmGlz6GEJWv7LEMM2ztO8eZIZJiF+xpAP1EWGtXmMyVYaIs/VVAcP7XkicWWWMxOhazy6HoaBWSojlLKt7QVZNny3EUMnHEyvyUcBrwLPtKVnwILxcudHHM+RA5L5L4Y4MahsvhieWv4wgeTFbrKmKb+7VE8vXgpgI/qDgdsW6WlNqaJPhj8pRvn3A2UA6UQ/9vW9X3/KCjeDovGUuso1MDgk+cU/lldWw+PzS9phjQehx3hodUPTkcpy7e0T8i8xYUL4mekVZRSs/VOsBavYLVxeDQM8sVyb4Rfv2H64WR5bQVekuDv9qixW6yy3XdCbZ9vLguOPdHX/HiwiJxzD13X/YBrQONTfbEMOBy+WMJyXrFQ5MIiuC+MEw6EHoTXnC1OheJMKTfInPJYcILxQPmvk7LvJhiiJ6JQi4CSKKV8OWst16DKcqIPJTyUwRss4YeAEl5ZY1lxOiwphCkkf3EIF8F9Zox8/VRYvJQSzOrWgS9/ulBz/BSXJwF32HlRY/c2NrW44U+UUr7siXhqtX8MbE4BmP1Qw6SFEpaUnlmBQSloFPB7YhzlxXEfwCv6ZPq5weeHc+4ai6iGM0rO3JYmxTPHTw15LHgYXV4wHqh5EXXdVkMlCCmuSTnrgRspcqULc+/gCrWow2EC8n9GpkjHphcvmvtaqael03mZ50vFbZaWXsxV/KNCwqLqerT04i+U9PmywfgJFz/eCrGwByn4G3VqtcV0ONmTV3n4I6mt8QkWb46Y3kVxv0BQ/GcJoQK/VLqwxE9JeSyKjRs/D4SbZFMxRb9BA1z+J5U1jC1FFyqvyJWUXMXeewZFTYL5vvq73m+mhXMslw5ylu8iuI9FRcuXKymZVOkOPFEIpZSXkmeslsYWYzcUU+fGovpKrxp9HJChFVNHtaRgBIGmMLjwO2pQW2+A4MpWkgi8w69cZr10MKWYelHuLag5MS2cBp7HLVCqbXkBeaZlKsnLASycM/NDdatJU74VobiK+xOW6e3YCRjIGyiIUE1b8qoWyXoF9hig4zVCK8gglU0kLRHuyyGWx3cqvmeamHNxb0XtiSn0dVQcq9A/6ut1KslztlAala/ZUm/KtyIiatNaIF7VrrzDLAbc1o1ELpYTlO9s3GdsZ0nlK/HziQWIK4K0hrzcAhXNT2F5SMs04d48660dTfnWRCElEBzcmd8r3RNHIhfFKVvSubjP2M6iEzOCnzdM2r3iYlEzPxHy7CPkYV0CiffmUUXWRWtf4caKRfT4+A7RDv8D8Zc3GQudHBBQL56we+9NPYl/z1CIfBbMxf2lAIk214r+9dOcJRfAwMu1lZ8IeTZKeQ4F6+8+E3HlubPf/lpUSy/2UnpvEkokfiD4Wz2YvMH8aEyBfUYQ/8UWaZmL+0uCc25M3LAmi5xQi+M6R7hgRnmK9ddYrIr4V8t+WzJwqPOi3MLtUrOzuq8t3VaxrRsPolRxvdxDctFf4CS8OvdKuWb3B3Z/8hM6cOzBT1FFE9Ff0fLk4Jx5RmzCkBUX63ZYRIEKdNKYD7/yrLOPTEkH1DtXXg79FSyFD1y3820q9c/B/SXB46dbwjiZ9Nf6u47bhoaGhoaGhoaGhoaLQNd1vwEQZDZ1jPJI1QAAAABJRU5ErkJggg=="
+
+/***/ }),
+
+/***/ "./src/images/cardsHome/entrp.jpg":
+/*!****************************************!*\
+  !*** ./src/images/cardsHome/entrp.jpg ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/media/entrp.9ceb5823.jpg";
+
+/***/ }),
+
+/***/ "./src/images/cardsHome/mavic_2_enterprise.jpg":
+/*!*****************************************************!*\
+  !*** ./src/images/cardsHome/mavic_2_enterprise.jpg ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/media/mavic_2_enterprise.861f74d2.jpg";
+
+/***/ }),
+
+/***/ "./src/images/cardsHome/osmo_pocket.jpg":
+/*!**********************************************!*\
+  !*** ./src/images/cardsHome/osmo_pocket.jpg ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/media/osmo_pocket.1d605e88.jpg";
+
+/***/ }),
+
+/***/ "./src/images/cardsHome/prof.jpg":
+/*!***************************************!*\
+  !*** ./src/images/cardsHome/prof.jpg ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/media/prof.9e2701e9.jpg";
+
+/***/ }),
+
+/***/ "./src/images/cardsHome/ronin_s.jpg":
+/*!******************************************!*\
+  !*** ./src/images/cardsHome/ronin_s.jpg ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/media/ronin_s.2039dca0.jpg";
+
+/***/ }),
+
+/***/ "./src/images/cardsHome/smart_controller.jpg":
+/*!***************************************************!*\
+  !*** ./src/images/cardsHome/smart_controller.jpg ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/media/smart_controller.814eaf51.jpg";
+
+/***/ }),
+
+/***/ "./src/images/logo/logo.png":
+/*!**********************************!*\
+  !*** ./src/images/logo/logo.png ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/media/logo.f183e034.png";
+
+/***/ }),
+
+/***/ "./src/images/user/user_page.jpeg":
+/*!****************************************!*\
+  !*** ./src/images/user/user_page.jpeg ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/media/user_page.3a868dab.jpeg";
+
+/***/ }),
+
+/***/ "./src/index.css":
+/*!***********************!*\
+  !*** ./src/index.css ***!
+  \***********************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/index.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(true) {
+	module.hot.accept(/*! !../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/index.css", function() {
+		var newContent = __webpack_require__(/*! !../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/index.css");
+
+		if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
+
+		var locals = (function(a, b) {
+			var key, idx = 0;
+
+			for(key in a) {
+				if(!b || a[key] !== b[key]) return false;
+				idx++;
+			}
+
+			for(key in b) idx--;
+
+			return idx === 0;
+		}(content.locals, newContent.locals));
+
+		if(!locals) throw new Error('Aborting CSS HMR due to changed css-modules locals.');
+
+		update(newContent);
+	});
+
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ "./src/index.js":
+/*!**********************!*\
+  !*** ./src/index.js ***!
+  \**********************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./index.css */ "./src/index.css");
+/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_index_css__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./App */ "./src/App.js");
+/* harmony import */ var _serviceWorker__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./serviceWorker */ "./src/serviceWorker.js");
+var _jsxFileName = "C:\\Users\\dront\\OneDrive\\Desktop\\djiars\\djiars\\src\\index.js";
+
+
+
+
+
+react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_App__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 7
+  },
+  __self: undefined
+}), document.getElementById('root')); // If you want your app to work offline and load faster, you can change
+// unregister() to register() below. Note this comes with some pitfalls.
+// Learn more about service workers: https://bit.ly/CRA-PWA
+
+_serviceWorker__WEBPACK_IMPORTED_MODULE_4__["unregister"]();
+
+/***/ }),
+
+/***/ "./src/serviceWorker.js":
+/*!******************************!*\
+  !*** ./src/serviceWorker.js ***!
+  \******************************/
+/*! exports provided: register, unregister */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "register", function() { return register; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unregister", function() { return unregister; });
+// This optional code is used to register a service worker.
+// register() is not called by default.
+// This lets the app load faster on subsequent visits in production, and gives
+// it offline capabilities. However, it also means that developers (and users)
+// will only see deployed updates on subsequent visits to a page, after all the
+// existing tabs open on the page have been closed, since previously cached
+// resources are updated in the background.
+// To learn more about the benefits of this model and instructions on how to
+// opt-in, read https://bit.ly/CRA-PWA
+const isLocalhost = Boolean(window.location.hostname === 'localhost' || // [::1] is the IPv6 localhost address.
+window.location.hostname === '[::1]' || // 127.0.0.1/8 is considered localhost for IPv4.
+window.location.hostname.match(/^127(?:\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}$/));
+function register(config) {
+  if (false) {}
+}
+
+function registerValidSW(swUrl, config) {
+  navigator.serviceWorker.register(swUrl).then(registration => {
+    registration.onupdatefound = () => {
+      const installingWorker = registration.installing;
+
+      if (installingWorker == null) {
+        return;
+      }
+
+      installingWorker.onstatechange = () => {
+        if (installingWorker.state === 'installed') {
+          if (navigator.serviceWorker.controller) {
+            // At this point, the updated precached content has been fetched,
+            // but the previous service worker will still serve the older
+            // content until all client tabs are closed.
+            console.log('New content is available and will be used when all ' + 'tabs for this page are closed. See https://bit.ly/CRA-PWA.'); // Execute callback
+
+            if (config && config.onUpdate) {
+              config.onUpdate(registration);
+            }
+          } else {
+            // At this point, everything has been precached.
+            // It's the perfect time to display a
+            // "Content is cached for offline use." message.
+            console.log('Content is cached for offline use.'); // Execute callback
+
+            if (config && config.onSuccess) {
+              config.onSuccess(registration);
+            }
+          }
+        }
+      };
+    };
+  }).catch(error => {
+    console.error('Error during service worker registration:', error);
+  });
+}
+
+function checkValidServiceWorker(swUrl, config) {
+  // Check if the service worker can be found. If it can't reload the page.
+  fetch(swUrl).then(response => {
+    // Ensure service worker exists, and that we really are getting a JS file.
+    const contentType = response.headers.get('content-type');
+
+    if (response.status === 404 || contentType != null && contentType.indexOf('javascript') === -1) {
+      // No service worker found. Probably a different app. Reload the page.
+      navigator.serviceWorker.ready.then(registration => {
+        registration.unregister().then(() => {
+          window.location.reload();
+        });
+      });
+    } else {
+      // Service worker found. Proceed as normal.
+      registerValidSW(swUrl, config);
+    }
+  }).catch(() => {
+    console.log('No internet connection found. App is running in offline mode.');
+  });
+}
+
+function unregister() {
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.ready.then(registration => {
+      registration.unregister();
+    });
+  }
+}
+
+/***/ }),
+
+/***/ 0:
+/*!**********************************************************************************!*\
+  !*** multi ./node_modules/react-dev-utils/webpackHotDevClient.js ./src/index.js ***!
+  \**********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! C:\Users\dront\OneDrive\Desktop\djiars\djiars\node_modules\react-dev-utils\webpackHotDevClient.js */"./node_modules/react-dev-utils/webpackHotDevClient.js");
+module.exports = __webpack_require__(/*! C:\Users\dront\OneDrive\Desktop\djiars\djiars\src\index.js */"./src/index.js");
+
+
+/***/ })
+
+},[[0,"runtime~main",0]]]);
+//# sourceMappingURL=main.chunk.js.map
