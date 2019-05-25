@@ -1,20 +1,22 @@
 import React from 'react';
+import { BrowserRouter, Route } from 'react-router-dom';
 import Navigation from '../src/components/Navigation/navigation'
 import './App.css'
 import SimpleSlider from './components/Slider/homeSlider';
 import CardList from './components/CardsHomepage/CardList';
 import ServiceList from './components/ServiceList/serviceList';
-import Footer from './components/Footer/footer';
 import Logare from './components/User/logare';
 import Inregistrare from './components/User/inregistrare';
 import Consumator from './components/Consumator/consumator';
+import Home from './components/Home/home';
+import Footer from './components/Footer/footer';
 
 
 class App extends React.Component{
   constructor() {
     super();
     this.state = {
-      route:'home',
+      route:'logare',
     }
   }
 
@@ -25,22 +27,22 @@ class App extends React.Component{
   render(){
     return (
       <div  className="App">
-          { this.state.route === 'home' ?
+          <div>
+          <BrowserRouter>
             <div>
-              <Consumator/>
-              <Navigation/>
-              <SimpleSlider/>
-              <CardList/>
-              <ServiceList/>
+              <div>
+                <Navigation/>
+                <Route path='/' exact component={Home}/>
+                <Route path='/logare' exact component={Logare}/>
+                <Route path='/inregistrare' exact component={Inregistrare}/>
+                <Route path='/consumator' component={Consumator}/>
+                <Footer/>
+              </div>
             </div>
-            :(
-              this.state.route === 'logare'
-              ? <Logare onRouteChange={this.onRouteChange}/>
-              : <Inregistrare onRouteChange={this.onRouteChange}/>
-            )
-          }
-          <Footer/>
+          </BrowserRouter>
+        </div>
       </div>
+
     );
   }
 }

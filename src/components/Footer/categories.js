@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { MdChevronRight } from "react-icons/md";
 
@@ -24,11 +25,10 @@ const Title = styled.h2`
     color: #fff;
     font-weight: normal;
 `
-
-const Link = styled.a`
-    text-decoration:none;
-    color:#727272;
-    cursor:pointer;
+const StyledLink = styled(Link)`
+  text-decoration:none;
+  cursor:pointer
+  color:#727272;
 `
 
 const Li = styled.li`
@@ -48,7 +48,7 @@ const Categories = () =>{
             <Title>Categorii Produse</Title>
             <TitleLine></TitleLine>
             <ul>
-                <Link href="/consumator"><Li><MdChevronRight/>Consumator</Li></Link>
+                <StyledLink to='/consumator'><Li><MdChevronRight/>Consumator</Li></StyledLink>
                 <Link href="/profesional"><Li><MdChevronRight/>Profesional</Li></Link>
                 <Link href="/enterprise"><Li><MdChevronRight/>Enterprise</Li></Link>
                 <Link href="/piese"><Li><MdChevronRight/>Piese</Li></Link>

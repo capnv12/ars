@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import logo from '../../images/logo/logo.png';
 import { IoMdPerson } from "react-icons/io";
@@ -17,7 +18,7 @@ const Menu = styled.div`
     height:26px;
     padding:5px;`
 
-const MenuElements = styled.a`
+const MenuElements = styled.li`
     margin-right:15px;
     float: right;
     padding: 0 10px;
@@ -44,8 +45,7 @@ const MainMenuElements = styled.li`
 `
 
 const MainMenuLinks = styled.a`
-    text-decoration:none;
-    cursor:pointer
+
 `
 const Logo = styled.img`
     max-width:200px;
@@ -53,16 +53,29 @@ const Logo = styled.img`
     margin-top:10px;
 
 `
+const StyledLink = styled(Link)`
+  text-decoration:none;
+  cursor:pointer;
+  &:active{
+      color:black;
+  }
+  &:visited{
+      color:black;
+  }
+  &:hover{
+      color:black;
+  }
+`;
 
 const Navigation = () =>{
     return(
         <Nav>
             <Menu>
-                <MenuElements href="/logare"><IoMdPerson style={{margin:"0px 5px 0 5px"}}/></MenuElements>
+                <MenuElements><StyledLink to='/logare'><IoMdPerson style={{margin:"0px 5px 0 5px"}}/></StyledLink></MenuElements>
             </Menu>
             <MainMenu>
-                <MainMenuElements><MainMenuLinks><Logo src={logo} alt="DJI ARS Oradea Logo"/></MainMenuLinks></MainMenuElements>
-                <MainMenuElements><MainMenuLinks>Consumator</MainMenuLinks></MainMenuElements>
+                <MainMenuElements><StyledLink to='/'><Logo src={logo} alt="DJI ARS Oradea Logo"/></StyledLink></MainMenuElements>
+                <MainMenuElements><StyledLink to='/consumator'>Consumator</StyledLink></MainMenuElements>
                 <MainMenuElements><MainMenuLinks>Profesional</MainMenuLinks></MainMenuElements>
                 <MainMenuElements><MainMenuLinks>Enterprise</MainMenuLinks></MainMenuElements>
                 <MainMenuElements><MainMenuLinks>Piese</MainMenuLinks></MainMenuElements>

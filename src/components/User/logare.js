@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import user_page from '../../images/user/user_page.jpeg';
 import logo from '../../images/logo/logo.png';
@@ -116,15 +117,24 @@ const Input = styled.input`
     margin: 5px;
     padding:5px;
 `
-const Register = styled.p`
+const RegisterWrap = styled.div`
+margin-top:25px;
+`
+const StyledLink = styled(Link)`
     cursor:pointer;
     color:#44a8f2;
     text-decoration:none;
     margin-top:15px;
-`
-const RegisterWrap = styled.div`
-margin-top:25px;
-`
+  &:active{
+      color:black;
+  }
+  &:visited{
+      color:black;
+  }
+  &:hover{
+      color:black;
+  }
+`;
 const Logare = ({ onRouteChange }) => {
     return(
         <Wrapper>
@@ -156,7 +166,7 @@ const Logare = ({ onRouteChange }) => {
                                         </FormRow>
                                     </Form>
                                     <RegisterWrap>
-                                        <Register onClick={() => onRouteChange('inregistrare')}>Creaza un cont</Register>
+                                        <StyledLink to='/inregistrare'>Creaza un cont</StyledLink>
                                     </RegisterWrap>
                             </TitleCenter>
                         </Login>
