@@ -7,3 +7,9 @@ html, body, {
     vertical-align: baseline;
     background: #FEFEFE;
   }
+  h3{
+    font-size:44px;
+  }
+  p{
+    font-size: 1.2em;
+  }

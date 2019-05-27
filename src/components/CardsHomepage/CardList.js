@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 import Cards from './Cards';
 import { card } from './card';
 import smart_controller from '../../images/cardsHome/smart_controller.jpg'
@@ -78,6 +79,13 @@ padding: 5px;
 color: #000;
 
 `
+const StyledLink = styled(Link)`
+  text-decoration:none;
+  cursor:pointer;
+&:visited{
+    color:black;
+}
+`
 
 const CardList = () => {
     return(
@@ -108,16 +116,20 @@ const CardList = () => {
                 </Content4>
             </Box>
             <Box2>
-                <Img src={prof} alt="test"/>
-                <Content4>
-                    <Cards id={card[4].id} name={card[4].name} shortDescription={card[4].shortDescription}/>
-                </Content4>
+                <StyledLink to='/profesional'>
+                    <Img src={prof} alt="test"/>
+                    <Content4>
+                        <Cards id={card[4].id} name={card[4].name} shortDescription={card[4].shortDescription}/>
+                    </Content4>
+                </StyledLink>
             </Box2>
             <Box2>
+                <StyledLink to='/enterprise'>
                 <Img src={entrp} alt="test"/>
-                <Content4>
-                    <Cards id={card[4].id} name={card[4].name} shortDescription={card[4].shortDescription}/>
-                </Content4>
+                    <Content4>
+                        <Cards id={card[5].id} name={card[5].name} shortDescription={card[5].shortDescription}/>
+                    </Content4>
+                </StyledLink>
             </Box2>
         </Wrapper>
     </Container>

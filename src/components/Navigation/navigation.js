@@ -16,7 +16,10 @@ const Menu = styled.div`
     background: #f7f8f9;
     float: right;
     height:26px;
-    padding:5px;`
+    padding:5px;
+    text-decoration:none;
+    list-style-type:none;
+    `
 
 const MenuElements = styled.li`
     margin-right:15px;
@@ -76,8 +79,8 @@ const Navigation = () =>{
             <MainMenu>
                 <MainMenuElements><StyledLink to='/'><Logo src={logo} alt="DJI ARS Oradea Logo"/></StyledLink></MainMenuElements>
                 <MainMenuElements><StyledLink to='/consumator'>Consumator</StyledLink></MainMenuElements>
-                <MainMenuElements><MainMenuLinks>Profesional</MainMenuLinks></MainMenuElements>
-                <MainMenuElements><MainMenuLinks>Enterprise</MainMenuLinks></MainMenuElements>
+                <MainMenuElements><StyledLink to='/profesional'>Profesional</StyledLink></MainMenuElements>
+                <MainMenuElements><StyledLink to='/enterprise'>Enterprise</StyledLink></MainMenuElements>
                 <MainMenuElements><MainMenuLinks>Piese</MainMenuLinks></MainMenuElements>
                 <MainMenuElements><MainMenuLinks>Explorati</MainMenuLinks></MainMenuElements>
                 <MainMenuElements><MainMenuLinks>Contact</MainMenuLinks></MainMenuElements>
