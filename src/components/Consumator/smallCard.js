@@ -112,7 +112,8 @@ const MaiMultButton = styled.a`
 
   class SmallCardBody extends React.Component {
     render()
-      {const { image } = this.props;
+      {
+        const { image } = this.props;
       var style = {
           backgroundImage: 'url(' + image + ')',
       };

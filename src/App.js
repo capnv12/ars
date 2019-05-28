@@ -12,16 +12,16 @@ import Enterprise from './components/Enterprise/enterprise';
 
 
 class App extends React.Component{
-  constructor() {
-    super();
-    this.state = {
-      route:'logare',
-    }
-  }
+  // constructor() {
+  //   super();
+  //   this.state = {
+  //     route:'logare',
+  //   }
+  // }
 
-  onRouteChange = (route) => {
-    this.setState({route: route});
-  }
+  // onRouteChange = (route) => {
+  //   this.setState({route: route});
+  // }
 
   render(){
     return (

@@ -10,6 +10,9 @@ html, body, {
   h3{
     font-size:44px;
   }
+  h4{
+    font-size: 24px;
+  }
   p{
-    font-size: 1.2em;
+    font-size: 1em;
   }

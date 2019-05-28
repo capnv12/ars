@@ -4,16 +4,7 @@ import styled from 'styled-components';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import mavic_2_enterprise_banner from '../../images/Enterprise/mavic_2_enterprise_banner.jpg';
-import osmo_pocket from '../../images/SliderImages/osmo_pocket.png';
-import osmo_pocket_title from '../../images/SliderImages/osmo_pocket_title.png';
-import osmo_action from '../../images/SliderImages/osmo_action.png';
 
-const Background1 = styled.img`
-
-`
-const Background2 = styled.img`
-
-`
 const Wrapper = styled.div`
   width:100%;
 `
@@ -25,16 +16,6 @@ const Banner1 = styled.div`
     background-repeat: no-repeat;
     background-size: cover;;
 
-`
-const Banner2 = styled.div`
-  background-image: linear-gradient(top,#282c35,#090b18);background-image: -webkit-linear-gradient(top,#282c35,#090b18);background-image: -o-linear-gradient(top,#282c35,#090b18);background-image: -ms-linear-gradient(top,#282c35,#090b18);background-image: -moz-linear-gradient(top,#282c35,#090b18);
-  max-height:750px;
-  width:100%;
-  `
-const BannerDescription = styled.h3`
-  font-size: 24px;
-  color:#fff;
-  padding-top:25px;
 `
 const BannerTitle = styled.div`
     color: #fff;
