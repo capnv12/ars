@@ -60,7 +60,7 @@ const Enterprise = () => {
                 <SpecCards image={gestionare} title={'Gestionare in timp real'} text={'Integrati datele aeriene in fluxurile dvs. de lucru pentru a va administra bunurile din orice locatie.'}/>
             </Container>
             <EnterpriseIndex>
-
+                <Swiper></Swiper>
             </EnterpriseIndex>
             <TitleContainer>
                 <Contact/>
