@@ -81,7 +81,7 @@ const Navigation = () =>{
                 <MainMenuElements><StyledLink to='/consumator'>Consumator</StyledLink></MainMenuElements>
                 <MainMenuElements><StyledLink to='/profesional'>Profesional</StyledLink></MainMenuElements>
                 <MainMenuElements><StyledLink to='/enterprise'>Enterprise</StyledLink></MainMenuElements>
-                <MainMenuElements><MainMenuLinks>Piese</MainMenuLinks></MainMenuElements>
+                <MainMenuElements><StyledLink to='/piese'>Piese</StyledLink></MainMenuElements>
                 <MainMenuElements><MainMenuLinks>Explorati</MainMenuLinks></MainMenuElements>
                 <MainMenuElements><MainMenuLinks>Contact</MainMenuLinks></MainMenuElements>
             </MainMenu>

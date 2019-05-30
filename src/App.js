@@ -9,6 +9,7 @@ import Home from './components/Home/home';
 import Footer from './components/Footer/footer';
 import Profesional from './components/Profesional/profesional';
 import Enterprise from './components/Enterprise/enterprise';
+import Piese from './components/Piese/piese'
 
 
 class App extends React.Component{
@@ -37,6 +38,7 @@ class App extends React.Component{
                 <Route path='/consumator' component={Consumator}/>
                 <Route path='/profesional' component={Profesional}/>
                 <Route path='/enterprise' component={Enterprise}/>
+                <Route path='/piese' component={Piese}/>
                 <Footer/>
               </div>
             </div>
