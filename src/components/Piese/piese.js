@@ -56,23 +56,25 @@ const ProductSection = styled.div`
     margin:0 auto
 `
 
-const Piese = () => {
-    return(
-        <Wrapper>
-            <BannerWrap>
-                <Container>
-                    <TitleContainer>
-                        <H1>Piese</H1>
-                        <P>Descopera adevaratul potential al dronei tale.</P>
-                    </TitleContainer>
-                </Container>
-            </BannerWrap>
-            <ProductSection>
-                <Nav/>
-                <Products/>
-            </ProductSection>
-        </Wrapper>
-    )
+class Piese extends React.Component{
+    render(){
+        return(
+            <Wrapper>
+                <BannerWrap>
+                    <Container>
+                        <TitleContainer>
+                            <H1>Piese</H1>
+                            <P>Descopera adevaratul potential al dronei tale.</P>
+                        </TitleContainer>
+                    </Container>
+                </BannerWrap>
+                <ProductSection>
+                    <Nav/>
+                    <Products/>
+                </ProductSection>
+            </Wrapper>
+        )
+    }
 }
 
 export default Piese;

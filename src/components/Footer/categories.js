@@ -51,7 +51,7 @@ const Categories = () =>{
                 <StyledLink to='/consumator'><Li><MdChevronRight/>Consumator</Li></StyledLink>
                 <StyledLink to='/profesional'><Li><MdChevronRight/>Profesional</Li></StyledLink>
                 <StyledLink to='/enterprise'><Li><MdChevronRight/>Enterprise</Li></StyledLink>
-                <Link href="/piese"><Li><MdChevronRight/>Piese</Li></Link>
+                <StyledLink to='/enterprise'><Li><MdChevronRight/>Piese</Li></StyledLink>
             </ul>
 
         </Wrapper>

@@ -21,19 +21,21 @@ const Li = styled.li`
     padding: 8px 0;
     cursor: pointer;
 `
-const Nav = ({CategoryChange}) => {
+
+const Nav = () => {
         return(
             <Wrapper>
                 <Container>
                     <Ul>
-                        <Li onClick={() => CategoryChange('controler-de-zbor')}>Controler de zbor</Li>
-                        <Li onClick={() => CategoryChange('sistem-de-propulsie')}>Sistem de propulsie</Li>
+                        <Li>Controler de zbor</Li>
+                        <Li>Sistem de propulsie</Li>
                         <Li>Transmisie</Li>
                         <Li>Dezvoltatori</Li>
                         <Li>Alte accesorii</Li>
                     </Ul>
                 </Container>
             </Wrapper>
+
         )
 }
 

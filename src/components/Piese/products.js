@@ -1,8 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import {ProductCard} from './productCard';
-import N3 from '../../images/Piese/n3.png';
-import Naza_v2 from '../../images/Piese/naza_v2.png';
 import E305 from '../../images/Piese/e305.jpg';
 import E2000 from '../../images/Piese/e2000.jpg';
 import E5000 from '../../images/Piese/e5000.jpg';
@@ -17,6 +15,7 @@ import D_RTK_2 from '../../images/Piese/d_rtk_2.jpg';
 import D_RTK from '../../images/Piese/d_rtk.jpg';
 import Iosd_mark_2 from '../../images/Piese/iosd_mark_2.png';
 import Iosd_mini from '../../images/Piese/iosd_mini.png';
+import Controler from './controler'
 
 const Wrapper = styled.div`
     flex-basis: 75%;
@@ -45,29 +44,19 @@ const Li = styled.li`
     padding: 0 10px;
 `
 class Products extends React.Component {
-    // constructor() {
-    //     super();
-    //     this.state = {
-    //       category:'controler-de-zbor',
-    //     }
-    //   }
+    state = {
+		openHello: false
+	}
 
-    // CategoryChange = (category) => {
-    //     this.setState({category:category});
-    //   }
+	handleHello = () => {
+		this.setState({ openHello: !this.state.openHello })
+	}
 
-      render(){
+    render(){
         return(
         <Wrapper>
             <Container>
-                <Ul>
-                    <Li>
-                        <ProductCard image={N3} title={'N3'} text={'Un nou algoritm de control al zborului, sistem dual-IMU si sistem de amortizare a vibratiilor.'}/>
-                    </Li>
-                    <Li>
-                        <ProductCard image={Naza_v2} title={'Naza-M V2'} text={'Design integrat, modul de alimentare independent si mai multe aplicatii.'}/>
-                    </Li>
-                </Ul>
+                <Controler/>
                 <Ul>
                         <Li>
                             <ProductCard image={E7000} title={'E7000'} text={'Sistem de propulsie imbunatatit, conceput pentru aplicatii industriale.'}/>
