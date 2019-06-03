@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import piese_banner from '../../images/Piese/piese_banner.jpg';
 import Nav from './nav';
 import Products from './products'
+import Peise1 from './piese1';
 
 const Wrapper = styled.div`
     width:100%;
@@ -71,7 +72,9 @@ class Piese extends React.Component{
                 <ProductSection>
                     <Nav/>
                     <Products/>
+
                 </ProductSection>
+                <Peise1/>
             </Wrapper>
         )
     }
