@@ -1,9 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 import piese_banner from '../../images/Piese/piese_banner.jpg';
-import Nav from './nav';
-import Products from './products'
-import Peise1 from './piese1';
+import Products from './products';
+import Controler from './controler';
+import Sistem from './sistem';
+import Transmisie from './transmisie';
+import Dezvoltatori from './dezvoltatori';
+import Accesorii from './accesorii';
 
 const Wrapper = styled.div`
     width:100%;
@@ -50,15 +53,13 @@ const P = styled.p`
     line-height: 24px;
 `
 const ProductSection = styled.div`
-    padding: 40px 0;
-    min-height: 800px;
-    display: flex;
-    width:1200px;
-    margin:0 auto
+padding: 40px 0;
+width:1200px;
+margin:0 auto;
 `
 
-class Piese extends React.Component{
-    render(){
+
+const Piese = () => {
         return(
             <Wrapper>
                 <BannerWrap>
@@ -70,14 +71,27 @@ class Piese extends React.Component{
                     </Container>
                 </BannerWrap>
                 <ProductSection>
-                    <Nav/>
-                    <Products/>
+                    <Products>
+                            <div label="Controlor de zbor">
+                                <Controler/>
+                            </div>
+                            <div label="Sistem de propulsie">
+                                <Sistem/>
+                            </div>
+                            <div label="Transmisie">
+                                <Transmisie/>
+                            </div>
+                            <div label="Dezvoltatori">
+                                <Dezvoltatori/>
+                            </div>
+                            <div label="Alte accesorii">
+                                <Accesorii/>
+                            </div>
+                        </Products>
 
                 </ProductSection>
-                <Peise1/>
             </Wrapper>
         )
     }
-}
 
 export default Piese;

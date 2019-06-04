@@ -1,42 +1,74 @@
 import React from 'react';
 import styled from 'styled-components';
-
+import PropTypes from 'prop-types';
+import { IoIosArrowForward } from "react-icons/io";
+import './navStyle.css'
 const Wrapper = styled.div`
-    flex-basis: 25%;
-    max-width: 25%;
-    box-sizing: border-box;
-    flex-shrink: 0;
-    padding: 0 10px;
+
 `
 const Container = styled.div`
-    padding: 24px 32px;
-    background: #fff;
-    min-height: 474px;
-    box-shadow: 0 5px 25px 0 rgba(0,0,0,0.05);
+
 `
 const Ul = styled.ul`
-    list-style: none;
+list-style: none;
+display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
 `
 const Li = styled.li`
     padding: 8px 0;
     cursor: pointer;
+    font-weight: 600;
+    max-width: 200px;
+    font-size: 18px;
+    line-height: 36px;
+    color: #303233;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
 `
 
-const Nav = () => {
+class Nav extends React.Component {
+    static propTypes = {
+        activeTab: PropTypes.string.isRequired,
+        label: PropTypes.string.isRequired,
+        onClick: PropTypes.func.isRequired,
+      };
+
+      onClick = () => {
+        const { label, onClick } = this.props;
+        onClick(label);
+      }
+
+      render() {
+        const {
+          onClick,
+          props: {
+            activeTab,
+            label,
+          },
+        } = this;
+
+        let className = 'tab-list-item';
+
+        if (activeTab === label) {
+          className += ' tab-list-active';
+        }
+
         return(
             <Wrapper>
-                <Container>
                     <Ul>
-                        <Li>Controler de zbor</Li>
-                        <Li>Sistem de propulsie</Li>
-                        <Li>Transmisie</Li>
-                        <Li>Dezvoltatori</Li>
-                        <Li>Alte accesorii</Li>
+                        <Li
+                            className={className}
+                            onClick={onClick}
+                        >
+                        {label}
+                        </Li>
                     </Ul>
-                </Container>
             </Wrapper>
-
         )
+      }
 }
 
 export default Nav;

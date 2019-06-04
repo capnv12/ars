@@ -2,8 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Wrapper = styled.section`
-    // flex-basis: 50%;
-    // max-width: 50%;
+  width:100%;
+  box-shadow: 0 5px 25px 0 rgba(0,0,0,0.05);
+
 `
 const ProductItem = styled.div`
     background: #fff;

@@ -16,9 +16,15 @@ const Li = styled.li`
     flex-shrink: 0;
     padding: 0 10px;
 `
+const ProductItem = styled.div`
+background: #fff;
+transition: all .3s ease;
+margin-bottom: 20px;
+`
 
-const Controler = ({handleHello}) => {
+const Controler = () => {
     return(
+        <ProductItem>
         <Ul>
                  <Li>
                     <ProductCard image={N3} title={'N3'} text={'Un nou algoritm de control al zborului, sistem dual-IMU si sistem de amortizare a vibratiilor.'}/>
@@ -27,6 +33,7 @@ const Controler = ({handleHello}) => {
                     <ProductCard image={Naza_v2} title={'Naza-M V2'} text={'Design integrat, modul de alimentare independent si mai multe aplicatii.'}/>
                 </Li>
         </Ul>
+        </ProductItem>
     )
 }
 
