@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import logo from '../../images/logo/logo.png';
-import { IoMdPerson } from "react-icons/io";
+// import { IoMdPerson } from "react-icons/io";
 
 const Nav = styled.nav`
     width:100%;
@@ -11,28 +11,28 @@ const Nav = styled.nav`
     height: 100%;
 `
 
-const Menu = styled.div`
-    width: 100%;
-    background: #f7f8f9;
-    float: right;
-    height:26px;
-    padding:5px;
-    text-decoration:none;
-    list-style-type:none;
-    `
+// const Menu = styled.div`
+//     width: 100%;
+//     background: #f7f8f9;
+//     float: right;
+//     height:26px;
+//     padding:5px;
+//     text-decoration:none;
+//     list-style-type:none;
+//     `
 
-const MenuElements = styled.li`
-    margin-right:15px;
-    float: right;
-    padding: 0 10px;
-    border-left: 1px solid #ddd;
-    height: 24px;
-    text-decoration:none;
-    cursor:pointer;
-    font-size: 24px;
-    color:#000;
+// const MenuElements = styled.li`
+//     margin-right:15px;
+//     float: right;
+//     padding: 0 10px;
+//     border-left: 1px solid #ddd;
+//     height: 24px;
+//     text-decoration:none;
+//     cursor:pointer;
+//     font-size: 24px;
+//     color:#000;
 
-`
+// `
 
 const MainMenu = styled.ul`
     max-width: 960px;
@@ -73,9 +73,9 @@ const StyledLink = styled(Link)`
 const Navigation = () =>{
     return(
         <Nav>
-            <Menu>
+            {/* <Menu>
                 <MenuElements><StyledLink to='/logare'><IoMdPerson style={{margin:"0px 5px 0 5px"}}/></StyledLink></MenuElements>
-            </Menu>
+            </Menu> */}
             <MainMenu>
                 <MainMenuElements><StyledLink to='/'><Logo src={logo} alt="DJI ARS Oradea Logo"/></StyledLink></MainMenuElements>
                 <MainMenuElements><StyledLink to='/consumator'>Consumator</StyledLink></MainMenuElements>

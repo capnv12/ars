@@ -1,31 +1,43 @@
 import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-import './navStyle.css'
 const Wrapper = styled.div`
-
+position: absolute;
+left: 0;
+top: 0;
+width: 30%;
+height: 100%;
+padding-left: 15px;
+padding-right: 15px;
+z-index: 30;
 `
 const Ul = styled.ul`
-list-style: none;
-display: flex;
-    flex-wrap: wrap;
-    margin: 0 -10px;
+height: 100%;
+    width: 100%;
+    border-right: solid 1px rgba(255,255,255,.3);
+    position: relative;
+    padding: 10px 20px 10px 100px;
+    list-style: none;
+    vertical-align: baseline;
 `
 const Li = styled.li`
-    padding: 8px 0;
+position: absolute;
+height: 16.6%;
+width: 100%;
+display: table;
+opacity: .7;
+z-index: 30;
+transition: all .4s;
+`
+const P = styled.p`
+color: #fff;
+    font-size: 24px;
+    display: table-cell;
+    vertical-align: middle;
     cursor: pointer;
-    font-weight: 600;
-    max-width: 200px;
-    font-size: 18px;
-    line-height: 36px;
-    color: #303233;
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
 `
 
-class Nav extends React.Component {
+class TabController extends React.Component {
     static propTypes = {
         activeTab: PropTypes.string.isRequired,
         label: PropTypes.string.isRequired,
@@ -59,7 +71,7 @@ class Nav extends React.Component {
                             className={className}
                             onClick={onClick}
                         >
-                        {label}
+                        <P>{label}</P>
                         </Li>
                     </Ul>
             </Wrapper>
@@ -67,4 +79,4 @@ class Nav extends React.Component {
       }
 }
 
-export default Nav;
+export default TabController;

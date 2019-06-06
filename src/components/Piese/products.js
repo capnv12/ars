@@ -2,11 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import Nav from './nav';
-import Controler from './controler'
-import Sistem from './sistem';
-import Transmisie from './transmisie';
-import Dezvoltatori from './dezvoltatori';
-import Accesorii from './accesorii';
 
 const ProductSection = styled.div`
 display: -webkit-box;

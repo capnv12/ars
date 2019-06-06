@@ -6,7 +6,10 @@ import captura_reala from '../../images/Enterprise/captura_reala.jpg'
 import sarcina from '../../images/Enterprise/sarcina.jpg'
 import gestionare from '../../images/Enterprise/gestionare.jpg'
 import Contact from './contact';
-
+import TabBanner from './tabBanner';
+import TabContent from './tabContent';
+import Agricultura from './tabBanner/agricultura'
+import Energie from './tabBanner/energie'
 const Wrapper = styled.div`
     width:100%;
 `
@@ -35,6 +38,18 @@ const H2 = styled.h2`
     font-size: 32px;
     font-weight: 600;
 `
+const BannerWrapper = styled.div`
+    width:1200px;
+margin: 0 auto;
+`
+const BannerContainer  = styled.div`
+position: relative;
+z-index: 20;
+margin: 0 auto;
+position: relative;
+overflow: hidden;
+z-index: 1;
+`
 
 const Enterprise = () => {
     return(
@@ -53,6 +68,21 @@ const Enterprise = () => {
             <TitleContainer>
                 <Contact/>
             </TitleContainer>
+            <BannerWrapper>
+                <BannerContainer>
+                    <TabContent>
+                        <div label="Agricultura">
+                            <Agricultura/>
+                        </div>
+                        <div label="Energie">
+                            <Energie/>
+                        </div>
+                        <div label="Energie">
+                            <Energie/>
+                        </div>
+                    </TabContent>
+                </BannerContainer>
+            </BannerWrapper>
         </Wrapper>
 
 
