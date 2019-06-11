@@ -6,7 +6,6 @@ import captura_reala from '../../images/Enterprise/captura_reala.jpg'
 import sarcina from '../../images/Enterprise/sarcina.jpg'
 import gestionare from '../../images/Enterprise/gestionare.jpg'
 import Contact from './contact';
-import TabBanner from './tabBanner';
 import TabContent from './tabContent';
 import Agricultura from './tabBanner/agricultura'
 import Energie from './tabBanner/energie'

@@ -5,9 +5,6 @@ import energie from '../../../images/Enterprise/energie.jpg'
 const Wrapper = styled.div`
 
 `
-const Content = styled.div`
-
-`
 
 const Energie = () => {
     return(

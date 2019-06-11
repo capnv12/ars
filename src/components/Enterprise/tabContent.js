@@ -6,9 +6,6 @@ import TabController from './tabController';
 const Wrapper = styled.div`
 `
 
-const ProductSection = styled.div`
-
-`
 
 const ElementWrapper = styled.div`
 

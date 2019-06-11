@@ -5,10 +5,6 @@ import agricultura from '../../../images/Enterprise/agricultura.jpg'
 const Wrapper = styled.div`
 
 `
-const Content = styled.div`
-
-`
-
 const Agricultura = () => {
     return(
         <Wrapper>
