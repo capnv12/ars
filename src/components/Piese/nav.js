@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-import './navStyle.css'
+import './navStyle.css';
 const Wrapper = styled.div`
 
 `

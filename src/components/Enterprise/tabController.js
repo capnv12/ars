@@ -2,32 +2,22 @@ import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 const Wrapper = styled.div`
-position: absolute;
-left: 0;
-top: 0;
-width: 30%;
-height: 100%;
-padding-left: 15px;
-padding-right: 15px;
-z-index: 30;
+
 `
 const Ul = styled.ul`
 height: 100%;
-    width: 100%;
-    border-right: solid 1px rgba(255,255,255,.3);
-    position: relative;
-    padding: 10px 20px 10px 100px;
-    list-style: none;
-    vertical-align: baseline;
+width: 100%;
+position: relative;
+padding: 25px 20px 20px 100px;
 `
 const Li = styled.li`
-position: absolute;
+position: relative;
 height: 16.6%;
 width: 100%;
 display: table;
 opacity: .7;
 z-index: 30;
-transition: all .4s;
+transition: all .1s;
 `
 const P = styled.p`
 color: #fff;
@@ -61,7 +51,7 @@ class TabController extends React.Component {
         let className = 'tab-list-item';
 
         if (activeTab === label) {
-          className += ' tab-list-active';
+          className += ' active-enterprise';
         }
 
         return(

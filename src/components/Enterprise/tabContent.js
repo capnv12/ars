@@ -16,6 +16,17 @@ const ControllerWrapper = styled.div`
 const Container = styled.div`
 
 `
+const TabNav = styled.div`
+position: absolute;
+left: 0;
+top: 0;
+width: 30%;
+height: 100%;
+padding-left: 15px;
+padding-right: 15px;
+z-index: 30;
+border-right: solid 1px rgba(255,255,255,.3);
+`
 
 class TabContent extends React.Component {
     static propTypes = {
@@ -47,19 +58,23 @@ class TabContent extends React.Component {
         return(
             <Wrapper className="tabs" >
               <ControllerWrapper className="container">
+              <TabNav>
                 <Container className="tab-list">
                 {children.map((child) => {
                   const { label } = child.props;
                   return (
+
                     <TabController
                       activeTab={activeTab}
                       key={label}
                       label={label}
                       onClick={onClickTabItem}
                       />
+
                       );
                   })}
                   </Container>
+                  </TabNav>
                 </ControllerWrapper>
                 <ElementWrapper className="tab-content">
                   {children.map((child) => {

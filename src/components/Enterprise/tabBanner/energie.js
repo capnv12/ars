@@ -9,7 +9,9 @@ const Wrapper = styled.div`
 const Energie = () => {
     return(
         <Wrapper>
-            <BannerCard image={energie} title={'D-RTK 2'} text={'Sistem de pozitionare la nivel centimetru cu transmisie de date neintrerupta.'}/>
+            <BannerCard image={energie} title={'Desfasurati inspectii sigure si eficiente'} text={'Dronele vizualizeaza diversele active energetice ale companiilor in timp real pentru planificarea rapida a intretinerii, sporind in acelasi timp siguranta si eficienta muncii inspectorilor.'}
+                specs={'Solara | Eoliana | Ulei si Combustibil | Linii de inalta tensiune | Nucleara'}
+            />
         </Wrapper>
     )
 }

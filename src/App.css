@@ -16,3 +16,14 @@ html, body, {
   p{
     font-size: 1em;
   }
+
+.active-enterprise{
+  opacity: 1;
+  font-weight: bold;
+}
+.active-enterprise::before{
+  content: '\203A';
+  color: #fff;
+  font-weight: bold;
+  font-size:24px;
+}

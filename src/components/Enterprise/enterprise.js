@@ -9,6 +9,10 @@ import Contact from './contact';
 import TabContent from './tabContent';
 import Agricultura from './tabBanner/agricultura'
 import Energie from './tabBanner/energie'
+import Siguranta from './tabBanner/siguranta'
+import Media from './tabBanner/media'
+import Infrastructura from './tabBanner/infrastructura'
+import Constructii from './tabBanner/constructii';
 const Wrapper = styled.div`
     width:100%;
 `
@@ -50,6 +54,7 @@ overflow: hidden;
 z-index: 1;
 `
 
+
 const Enterprise = () => {
     return(
         <Wrapper>
@@ -76,8 +81,16 @@ const Enterprise = () => {
                         <div label="Energie">
                             <Energie/>
                         </div>
-                        <div label="Energie">
-                            <Energie/>
+                        <div label="Siguranta Publica">
+                            <Siguranta/>
+                        </div>
+                        <div label="Media">
+                            <Media/>
+                        </div>
+                        <div label="Infrastructura">
+                            <Infrastructura/>
+                        </div><div label="Constructii">
+                            <Constructii/>
                         </div>
                     </TabContent>
                 </BannerContainer>

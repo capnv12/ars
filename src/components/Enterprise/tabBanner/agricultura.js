@@ -8,7 +8,9 @@ const Wrapper = styled.div`
 const Agricultura = () => {
     return(
         <Wrapper>
-            <BannerCard image={agricultura} title={'D-RTK 2'} text={'Sistem de pozitionare la nivel centimetru cu transmisie de date neintrerupta.'}/>
+            <BannerCard image={agricultura} title={'Maximizati randamentele cu ajutorul imaginilor aeriene'} text={'Datele aeriene permit fermierilor sa optimizeze intrarile, sa reactioneze mai repede la amenintari si sa parcurga rapid parcele.'}
+                specs={'Consultare recolta | Inspectie recolta | Managementul irigatiilor | Pulverizare'}
+            />
         </Wrapper>
     )
 }
