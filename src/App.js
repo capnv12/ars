@@ -10,6 +10,7 @@ import Footer from './components/Footer/footer';
 import Profesional from './components/Profesional/profesional';
 import Enterprise from './components/Enterprise/enterprise';
 import Piese from './components/Piese/piese'
+import MavicAir from './components/Products/Comercial/MavicAir/mavicAir';
 
 
 class App extends React.Component{
@@ -39,6 +40,7 @@ class App extends React.Component{
                 <Route path='/profesional' component={Profesional}/>
                 <Route path='/enterprise' component={Enterprise}/>
                 <Route path='/piese' component={Piese}/>
+                <Route path='/mavic-air' component={MavicAir}/>
                 <Footer/>
               </div>
             </div>
